@@ -1,0 +1,176 @@
+.carousel-padding {
+  padding: 20px;
+}
+
+.item {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  border-top: 14px solid #e26142;
+
+}
+
+
+@media (max-width: 750px) {
+  .item {
+    width: 100% !important; 
+  }
+}
+
+@media (min-width: 700px) and (max-width: 750px) {
+  .item {
+    padding-left: 0.9em; 
+  }
+
+}
+
+@media (max-width: 750px){
+  .item:hover {
+    cursor: pointer;
+    box-shadow: none !important;
+  }
+  
+}
+
+.item:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.custom-dot {
+  background-color: transparent;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  margin: 2px 5px;
+  cursor: pointer;
+}
+
+.custom-dot-list-style {
+  position: relative;
+  top: 1em;
+}
+
+.custom-dot.active {
+  background-color: #e26142;
+  border: #e26142;
+}
+
+.custom-dot.notactive {
+  background-color: gray;
+}
+
+.cardheading {
+  font-size: xx-large;
+  color: #e26142;
+}
+
+.cardemoji {
+  font-size: 3.5em;
+  color: #e26142;
+}
+
+.midCarouselHeadindiv {
+  padding: 1.4em;
+}
+
+.midCarouselHeadindiv h3 {
+  text-align: center;
+}
+
+.midCarouselHeadindiv p {
+  text-align: center;
+}
+
+.belowmidCarousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2em;
+  background-color: #e36f52;
+}
+
+.belowmidCarousel p {
+  display: inline-block;
+  color: #fff;
+  align-self: center;
+  padding-left: 1em;
+  padding-right: 2em;
+  font-size: 1.3em;
+}
+
+.buttonDiv{
+  justify-content: right;
+  display: inline-flex;
+}
+
+@media (hover: hover) {
+  #creditcard {
+    transform: translateY(110px);
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+button:hover #creditcard {
+  transform: translateY(0px);
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover #money {
+  transform: translateY(0px);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button:hover .button__text span {
+  transform: translateY(-0.25rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+.button {
+  border: none;
+  outline: none;
+  padding: 1rem 90px 1rem 2rem;
+  position: relative;
+  border-radius: 8px;
+  letter-spacing: 0.7px;
+  background-color: #e45f3e;
+  border: 4px solid #e55633;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button__svg {
+  position: absolute;
+  overflow: visible;
+  bottom: 6px;
+  right: 0.2rem;
+  height: 140%;
+}
+
+@media (max-width: 850px) {
+  .belowmidCarousel{
+    display: none;
+  }
+}

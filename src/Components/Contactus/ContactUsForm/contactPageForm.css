@@ -1,0 +1,135 @@
+.contactUsFormcontainer {
+  padding: 2em;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.left-container {
+  flex: 1;
+  height: 480px;
+  background-color: #e26142;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 480px;
+  background-color: #f8f8f8;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex: 1;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.left-container p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.right-inner-container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+.right-inner-container h2,
+.right-inner-container p {
+  color: #9a9999;
+}
+
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+.contactUsInput,
+.contactUsTextArea {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 8px 8px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.contactUsInput:focus,
+.contactUsTextArea:focus {
+  outline: 1px solid #e26142;
+  color: #d63912;
+}
+
+.contactUsSubmit {
+  border-radius: 20px;
+  border: 1px solid #d63912;
+  background-color: #e26142;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contactUsSubmit:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+  .left-container {
+    display: none;
+  }
+  .lg-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display: none;
+  }
+}
+
+form p {
+  text-align: left;
+}
+
+.contactUsSocial {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contactUsSocial a:hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-2px); 
+}
+
+.contactUsSocial a + a {
+  margin-left: 8px;
+}

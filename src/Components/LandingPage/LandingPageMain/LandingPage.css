@@ -1,0 +1,110 @@
+
+.landingImage {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.landingImageDiv {
+  height: 100vh;
+  margin: 0;
+}
+.itsnav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.itsnav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+}
+
+.itsnav li {
+  margin: 0;
+  font-size: larger;
+}
+
+.itsnav ul li:hover {
+  cursor: pointer;
+}
+
+.itsnav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2vw;
+}
+
+.dot-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 3vw;
+}
+
+.dot {
+  height: 9px;
+  width: 9px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 7px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+.landingPageTitle.active{
+  color: black;
+}
+@media (max-width: 500px) {
+  .itsnav {
+    display: none;
+  }
+
+  .landingPageless400 {
+    /* Your existing styles for non-active state */
+    transition: opacity 0.5s ease; /* Updated the duration to 0.5s and used ease timing function */
+  }
+
+  .landingPageless400.active {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Updated the duration to 0.5s and used ease timing function */
+  }
+
+  .landingPageless400:not(.active) {
+    opacity: 0; /* Set opacity to 0 for non-active state */
+  }
+
+}
+
+.landingPageHeading{
+    position: fixed;
+    font-weight: 600;
+    font-family: 'Agbalumo-Regular', sans-serif; 
+    font-size: 35px;
+    margin-top: 2vh;
+    margin-left: 1.5vw;
+    color: rgb(25, 161, 147);
+    top: 0;
+    background-color: transparent;
+}

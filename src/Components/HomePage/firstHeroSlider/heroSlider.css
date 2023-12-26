@@ -1,0 +1,11 @@
+.imageofSlide {
+  height: 100vh !important;
+
+  @media (max-width: 600px) {
+    height: 60vh !important;
+  }
+}
+
+.FirstHeroSlider {
+  overflow: visible;
+}

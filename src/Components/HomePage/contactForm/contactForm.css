@@ -1,0 +1,117 @@
+.contactFormDiv {
+  background: linear-gradient(to bottom right, #f1886e, #dc5331);
+  width: 100% !important;
+  padding: 2em;
+  margin: 0;
+}
+
+.t_border {
+  color: white;
+}
+.contactFormDiv h1,
+.contactFormDiv h3 {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.contactFormDiv a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contactFormDiv a:hover {
+  color: #6d1702;
+}
+
+.contactFormDiv p,
+.contactFormDiv strong {
+  word-break: break-word;
+  color: #fff;
+}
+
+.ovhidden {
+  overflow: hidden;
+}
+
+.contact__form .form-control {
+  padding: 1.375rem 0.75rem;
+  line-height: 1.5;
+  color: #6d1702;
+  background-color: #fff;
+  border-radius: 0 !important;
+}
+
+.contact__form input.form-control {
+  margin-bottom: 2.5em;
+  height: calc(2.5em + 0.75rem + 2px);
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 999999999;
+  background: #fff;
+  transform: translateX(100%);
+  animation: shift-rightwards 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes shift-rightwards {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.formbtn {
+  --b: 3px;
+  --s: 0.15em;
+  --c: #fff;
+
+  padding: calc(0.05em + var(--s)) calc(0.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--c) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.2em;
+}
+
+.formbtn:hover,
+.formbtn:focus-visible {
+  --_p: 0px;
+  outline-color: var(--c);
+  outline-offset: 0.05em;
+}
+
+.formbtn:active {
+  background: #fff;
+  color: #6d1702;
+}
+
+.formbtn {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border: none;
+  margin: 0.1em;
+}
