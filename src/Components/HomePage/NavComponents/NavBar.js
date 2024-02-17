@@ -6,15 +6,42 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
+//import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isSticky, setIsSticky] = useState(false);
-  const [submenuVisible, setSubmenuVisible] = useState(false);
-  const [submenuVisible2, setSubmenuVisible2] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  /*
+    const [submenuVisible, setSubmenuVisible] = useState(false);
+    const [submenuVisible2, setSubmenuVisible2] = useState(false);
+   
+    const handleSubMenuMouseEnter = () => {
+      setSubmenuVisible(!submenuVisible);
+    };
+  
+    const handleSubMenuMouseLeave = () => {
+      setSubmenuVisible(false);
+    };
+  
+    const toggleSubmenu = () => {
+      setSubmenuVisible(!submenuVisible);
+    };
+  
+    const handleSubMenuMouseEnter2 = () => {
+      setSubmenuVisible2(!submenuVisible2);
+    };
+  
+    const handleSubMenuMouseLeave2 = () => {
+      setSubmenuVisible2(false);
+    };
+  
+    const toggleSubmenu2 = () => {
+      setSubmenuVisible2(!submenuVisible2);
+    };
+  
+  */
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,30 +65,6 @@ function NavBar() {
     };
   }, []);
 
-  const handleSubMenuMouseEnter = () => {
-    setSubmenuVisible(!submenuVisible);
-  };
-
-  const handleSubMenuMouseLeave = () => {
-    setSubmenuVisible(false);
-  };
-
-  const toggleSubmenu = () => {
-    setSubmenuVisible(!submenuVisible);
-  };
-
-  const handleSubMenuMouseEnter2 = () => {
-    setSubmenuVisible2(!submenuVisible2);
-  };
-
-  const handleSubMenuMouseLeave2 = () => {
-    setSubmenuVisible2(false);
-  };
-
-  const toggleSubmenu2 = () => {
-    setSubmenuVisible2(!submenuVisible2);
-  };
-
   if (windowWidth > 600) {
     return (
       <div>
@@ -69,13 +72,19 @@ function NavBar() {
           <div className="navLogo">
             <img src={logo} alt="this is logo" width="130" />
           </div>
-          <div className="clock"> <div className="clockDot"></div> </div>
+          <div className="clock">
+            {" "}
+            <div className="clockDot"></div>{" "}
+          </div>
           <nav className="navItems">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/home">Home</Link>
               </li>
-              <li
+              <li>
+                <Link to="products">Products</Link>
+              </li>
+              {/* <li
                 className="navmenuli"
                 onMouseEnter={handleSubMenuMouseEnter}
                 onMouseLeave={handleSubMenuMouseLeave}
@@ -95,8 +104,11 @@ function NavBar() {
                     </li>
                   </ul>
                 )}
+              </li> */}
+              <li>
+                <Link to="services">Services</Link>
               </li>
-              <li
+              {/* <li
                 className="navmenuli"
                 onMouseEnter={handleSubMenuMouseEnter2}
                 onMouseLeave={handleSubMenuMouseLeave2}
@@ -116,12 +128,12 @@ function NavBar() {
                     </li>
                   </ul>
                 )}
+              </li> */}
+              <li>
+                <Link to="about-us">About Us</Link>
               </li>
               <li>
-                <Link to="/about-us">About Us</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact Us</Link>
+                <Link to="contact-us">Contact Us</Link>
               </li>
               {/* {windowWidth > 850 && (
                 <li>
@@ -136,11 +148,9 @@ function NavBar() {
       </div>
     );
   } else {
-    const expand = "sm";
-
     return (
-      <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-        <Container fluid>
+      <Navbar collapseOnSelect="true" expand="xxl" bg="light" variant="light ">
+        <Container className="navContainer m-0">
           <Navbar.Brand href="#">
             <img
               src={logo}
@@ -149,62 +159,54 @@ function NavBar() {
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              {/* <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                 Pioneer
               </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1" className="nav-link-custom">
-                  <Link to={"/"}>Home</Link>
-                </Nav.Link>
-
-                <NavDropdown
-                  title="Business"
-                  id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  variant="dark"
-                >
-                  <NavDropdown.Item href="#action3">
-                    Web 1 
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Web 2
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Web 3
-                  </NavDropdown.Item>
-                </NavDropdown>
-
-                <NavDropdown
-                  title="Services"
-                  id={`offcanvasNavbarDropdown-expand-${expand}`}
-                >
-                  <NavDropdown.Item href="#action3">
-                    Attendance Management Software
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Payroll Services
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Integrations
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link href="#action1" className="nav-link-custom">
-                  <Link to={"/about-us"}>About Us</Link>
-                </Nav.Link>
-                <Nav.Link href="#action1" className="nav-link-custom">
-                  <Link to="/contact-us">Contact Us</Link>
-                </Nav.Link>
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
+            </Offcanvas.Header> */}
+              <Nav.Link eventKey={2}>
+                <Link to="/home" className="mobNavOpt">
+                  Home
+                </Link>
+              </Nav.Link>
+              <Nav.Link eventKey={2}>
+                <Link to="services" className="mobNavOpt">
+                  Services
+                </Link>
+              </Nav.Link>
+              <Nav.Link eventKey={2}>
+                <Link to="products" className="mobNavOpt">
+                  Products
+                </Link>
+              </Nav.Link>
+              <Nav.Link eventKey={2}>
+                <Link to="about-us" className="mobNavOpt">
+                  About Us
+                </Link>
+              </Nav.Link>
+              <Nav.Link eventKey={2}>
+                <Link to="contact-us" className="mobNavOpt">
+                  Contact Us
+                </Link>
+              </Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Item 2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Item 3</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated Item</NavDropdown.Item>
+              </NavDropdown> */}
+            </Nav>
+            {/* <Nav>
+              <Nav.Link href="#deets">Another Link</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                Another Link
+              </Nav.Link>
+            </Nav> */}
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     );

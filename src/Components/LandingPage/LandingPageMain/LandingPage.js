@@ -38,7 +38,7 @@ function LandingPage() {
         if (newSlide <= 4) {
           scroller.scrollTo(`section${newSlide + 1}`, {
             smooth: true,
-            duration: 300,
+            duration: 100,
           });
           return newSlide;
         }
@@ -51,7 +51,7 @@ function LandingPage() {
         if (newSlide >= 0) {
           scroller.scrollTo(`section${newSlide + 1}`, {
             smooth: true,
-            duration: 300,
+            duration: 100,
           });
           return newSlide;
         }
@@ -65,27 +65,27 @@ function LandingPage() {
     if (isActive) {
       setIsActive(false);
 
-      if (event.deltaY > 0 && slideNo < 4) {
+      if (event.deltaY > 0 && slideNo < 4 && event.deltaX === 0) {
         // Mouse wheel down
         setSlideNo((prevSlide) => {
           const newSlide = prevSlide + 1;
           if (newSlide <= 4) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 300,
+              duration: 250,
             });
             return newSlide;
           }
           return prevSlide;
         });
-      } else if (event.deltaY < 0 && slideNo > 0) {
+      } else if (event.deltaY < 0 && slideNo > 0 && event.deltaX === 0) {
         // Mouse wheel up
         setSlideNo((prevSlide) => {
           const newSlide = prevSlide - 1;
           if (newSlide >= 0) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 300,
+              duration: 250,
             });
             return newSlide;
           }
@@ -124,7 +124,7 @@ function LandingPage() {
           if (newSlide <= 4) {
             scroller.scrollTo(`section${newSlide + 1}`, {
               smooth: true,
-              duration: 300,
+              duration: 200,
             });
             return newSlide;
           }

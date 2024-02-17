@@ -1,96 +1,128 @@
-
-
-/* Feature Box
----------------------*/
-
-.ServicesContainer{
-  margin-top: 2em;
+.ServicesContainer {
+  margin: 0.5rem;
 }
-.feature-box-1 {
-  padding: 32px;
-  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
-  margin: 15px 0;
-  position: relative;
-  z-index: 1;
-  border-radius: 10px;
-  overflow: hidden;
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
-  transition: ease all 0.35s;
-  top: 0;
+
+.ServicesContainerRow {
+  width: 98vw;
 }
-.feature-box-1 * {
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
-  transition: ease all 0.35s;
+
+.additional-content {
+  width: 20vw;
 }
-.feature-box-1 .icon {
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  background: #fc5356;
-  color: #ffffff;
+
+.ServiceImage {
+  width: 50vw !important;
+}
+
+.service-description {
+  margin: 2rem 0 2rem 0;
+}
+
+.service-description h3 {
   text-align: center;
-  border-radius: 50%;
-  margin-bottom: 22px;
-  font-size: 27px;
 }
-.feature-box-1 .icon i {
-  line-height: 70px;
-}
-.feature-box-1 h5 {
-  color: #20247b;
-  font-weight: 600;
-}
-.feature-box-1 p {
-  margin: 0;
-}
-.feature-box-1:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: auto;
-  right: 0;
-  border-radius: 10px;
-  width: 0;
-  background: #20247b;
-  z-index: -1;
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
-  transition: ease all 0.35s;
-}
-.feature-box-1:hover {
-  top: -5px;
-}
-.feature-box-1:hover h5 {
-  color: #ffffff;
-}
-.feature-box-1:hover p {
-  color: rgba(255, 255, 255, 0.8);
-}
-.feature-box-1:hover:after {
+
+.seviceContBox {
+  margin-top: 20%;
+  height: 19.6%;
   width: 100%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seviceContBox p {
+  text-align: left;
+  margin: 0px 40px 10px 40px;
+}
+
+.seviceContBoxDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.servicesContactbtn {
+  margin-top: 1.5em;
+  display: inline-block;
+  height: 40px;
+  width: max-content;
+  line-height: 40px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: rgb(196, 196, 196);
+  color: rgb(39, 38, 38);
+  border-radius: 60px;
+  transition: 0.3s;
+  
+}
+
+.servicesContactbtn:hover {
+  color: #fff;
+}
+
+.servicesContactbtn:active {
+  box-shadow: 2px 10px 10px gray;
+}
+
+.servicesContactbtn-label-down {
+  display: block;
+  margin: 0px 20px;
   height: 100%;
-  border-radius: 10px;
-  left: 0;
-  right: auto;
+  position: relative;
+  top: -100%;
+  transition: 0.3s;
 }
-#section {
-    padding: 100px 0;
-    position: relative;
+
+.servicesContactbtn:hover {
+  top: 0%;
 }
-.section-title {
-    padding-bottom: 45px;
+.servicesContactbtn:hover .servicesContactbtn-label-down {
+  top: 0%;
 }
-.section-title h2 {
-    font-weight: 700;
-    color: #20247b;
-    font-size: 45px;
-    margin: 0 0 15px;
-    border-left: 5px solid #fc5356;
-    padding-left: 15px;
+
+.serviceContTeleIconDown{
+  padding-right: 10px;
+  border-right: 2px solid #fff;
+}
+
+.serviceContTeleIcon{
+  padding-right: 10px;
+  border-right: 2px solid black;
+}
+
+
+@media (max-width: 768px) {
+  .additional-content 
+  {
+    margin: auto auto auto auto;
+    width: 94%;
+    height: 100%;
+    background-color: gray;
+    margin-bottom: 10px;
+  }
+
+  .seviceContBox {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .seviceContBox p {
+    text-align: left;
+    margin: 0px 40px 10px 40px;
+  }
+  
+  .seviceContBoxDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
 }

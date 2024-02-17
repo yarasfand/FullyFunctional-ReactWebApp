@@ -13,15 +13,14 @@ function HeroSlider() {
   return (
     <div className="FirstHeroSlider">
       <Carousel
-        fade
         pause="hover"
         interval={3000}
         draggable
         touch
-        keyboard={false}
-        slide
+        keyboard={true}
+        fade = {true}
       >
-        <Carousel.Item>
+        <Carousel.Item >
           <img className="d-block w-100 imageofSlide" src={image1} alt="First slide" />
           <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>

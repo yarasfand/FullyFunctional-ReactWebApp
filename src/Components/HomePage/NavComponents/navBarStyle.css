@@ -2,6 +2,10 @@
   font-family: sans-serif !important;
 }
 
+.mobNavOpt{
+  color:  rgb(92, 91, 91) !important;
+}
+
 .navContainer {
   margin-top: 1.5em;
   display: flex;
@@ -339,6 +343,14 @@
 
 }
 
+@media (max-width: 746px) {
+  .clock{
+    top:  100% !important;
+    left: 0% !important;
+  }
+
+}
+
 @media (max-height: 850px) {
   .clock{
     top:  2.2em !important;
@@ -350,7 +362,18 @@
  
     .clock{
       top:  2.5em !important;
-      left: 50% !important;
+      left: -7% !important;
     }
   
+}
+
+@media (max-height: 850px) and (max-width: 700px) {
+  .clock{
+    top:  2.0em !important;
+    left: -3% !important;
+  }
+}
+
+.navContainer{
+  flex-direction: row;
 }
