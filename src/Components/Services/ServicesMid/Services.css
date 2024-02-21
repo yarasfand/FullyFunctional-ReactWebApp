@@ -1,5 +1,5 @@
 .ServicesContainer {
-  margin: 0.5rem;
+  margin: 0.5rem;;
 }
 
 .ServicesContainerRow {
@@ -22,78 +22,6 @@
   text-align: center;
 }
 
-.seviceContBox {
-  margin-top: 20%;
-  height: 19.6%;
-  width: 100%;
-  background-color: gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.seviceContBox p {
-  text-align: left;
-  margin: 0px 40px 10px 40px;
-}
-
-.seviceContBoxDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.servicesContactbtn {
-  margin-top: 1.5em;
-  display: inline-block;
-  height: 40px;
-  width: max-content;
-  line-height: 40px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  background-color: rgb(196, 196, 196);
-  color: rgb(39, 38, 38);
-  border-radius: 60px;
-  transition: 0.3s;
-  
-}
-
-.servicesContactbtn:hover {
-  color: #fff;
-}
-
-.servicesContactbtn:active {
-  box-shadow: 2px 10px 10px gray;
-}
-
-.servicesContactbtn-label-down {
-  display: block;
-  margin: 0px 20px;
-  height: 100%;
-  position: relative;
-  top: -100%;
-  transition: 0.3s;
-}
-
-.servicesContactbtn:hover {
-  top: 0%;
-}
-.servicesContactbtn:hover .servicesContactbtn-label-down {
-  top: 0%;
-}
-
-.serviceContTeleIconDown{
-  padding-right: 10px;
-  border-right: 2px solid #fff;
-}
-
-.serviceContTeleIcon{
-  padding-right: 10px;
-  border-right: 2px solid black;
-}
 
 
 @media (max-width: 768px) {
@@ -104,25 +32,6 @@
     height: 100%;
     background-color: gray;
     margin-bottom: 10px;
-  }
-
-  .seviceContBox {
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .seviceContBox p {
-    text-align: left;
-    margin: 0px 40px 10px 40px;
-  }
-  
-  .seviceContBoxDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   
 }

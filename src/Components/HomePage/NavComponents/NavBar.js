@@ -72,14 +72,10 @@ function NavBar() {
           <div className="navLogo">
             <img src={logo} alt="this is logo" width="130" />
           </div>
-          <div className="clock">
-            {" "}
-            <div className="clockDot"></div>{" "}
-          </div>
           <nav className="navItems">
             <ul>
               <li>
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="products">Products</Link>
@@ -168,7 +164,7 @@ function NavBar() {
               </Offcanvas.Title>
             </Offcanvas.Header> */}
               <Nav.Link eventKey={2}>
-                <Link to="/home" className="mobNavOpt">
+                <Link to="/" className="mobNavOpt">
                   Home
                 </Link>
               </Nav.Link>

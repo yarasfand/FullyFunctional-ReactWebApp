@@ -139,10 +139,7 @@
     flex-wrap: wrap;
   }
 
-  .clock {
-    left: 50% !important;
-    top: 1.2em !important;
-  }
+ 
   .navLogo {
     justify-content: center;
     padding-left: 30%;
@@ -272,107 +269,6 @@
   transition: all 0.4s ease 0s;
 } */
 
-
-.clock {
-  position: relative;
-  top: 3.5em;
-  left: 30px;
-  width: 42px;
-  height: 40px;
-  border: 5px solid #e7532e;
-  border-radius: 50%;
-  background: #fff;
-  transform: translate(-50%, -50%);
-  box-shadow: inset 0px 0px 10px black;
-}
-
-.clock::before {
-  position: absolute;
-  content: '';
-  height: 14px;
-  width: 2px;
-  background: #e26142;
-  top: 50%;
-  left: calc(51% - 1px);
-  border-radius: 5px;
-  animation: spin 8s linear infinite;
-  transform-origin: top;
-}
-
-.clock::after {
-  position: absolute;
-  content: '';
-  height: 11px;
-  width: 2px;
-  background: #e26142;
-  top: 50%;
-  left: calc(50% - 1px);
-  border-radius: 5px;
-  animation: spin 99s linear infinite;
-  transform-origin: top;
-  
-}
-
-.clockDot{
-  content: "";
-  width: 5px;
-  border-radius: 50%;
-  height: 4px;
-  background: #e26142;
-  position: relative;
-  top: 42%;
-  left: 43%;
-}
-@keyframes spin {
-  0% {
-      transform: rotate(-180deg)
-  }
-  100% {
-      transform: rotate(180deg)
-  }
-}
-
-
-
-
-@media (max-width: 559px) {
-  .clock{
-    top:  -50% !important;
-    left: 140% !important;
-  }
-
-}
-
-@media (max-width: 746px) {
-  .clock{
-    top:  100% !important;
-    left: 0% !important;
-  }
-
-}
-
-@media (max-height: 850px) {
-  .clock{
-    top:  2.2em !important;
-    left: 2em !important;
-  }
-}
-
-@media (max-height: 850px) and (max-width: 850px) {
- 
-    .clock{
-      top:  2.5em !important;
-      left: -7% !important;
-    }
-  
-}
-
-@media (max-height: 850px) and (max-width: 700px) {
-  .clock{
-    top:  2.0em !important;
-    left: -3% !important;
-  }
-}
 
 .navContainer{
   flex-direction: row;

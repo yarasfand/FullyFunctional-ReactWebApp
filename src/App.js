@@ -1,11 +1,14 @@
 import "./App.css";
+import LayoutFixedNav from "./Components/HomePage/homePageBody/LayoutFixedNav";
 import RoutToPage from "./DefLinks/RoutToPage";
 
 function App() {
   return (
     <div>
       <div>
-        <RoutToPage/>
+        <LayoutFixedNav>
+          <RoutToPage />
+        </LayoutFixedNav>
       </div>
     </div>
   );

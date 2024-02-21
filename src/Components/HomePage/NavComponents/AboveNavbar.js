@@ -25,7 +25,7 @@ function AboveNavbar() {
   return (
     <header>
       <div className="topNav">
-        <p className="topNavText">Pioneer Time Systems.</p>
+        <p className="topNavText">Pioneer Time System.</p>
         <ul className="topNav-list">
           <li>
             <i className="bi bi-hourglass-split"></i> Mon to Fri 08:00 - 16:00
