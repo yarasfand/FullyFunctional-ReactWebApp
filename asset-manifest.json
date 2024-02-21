@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.f7462965.css",
-    "main.js": "/FullyFunctional-ReactWebApp/static/js/main.5cb0fdc8.js",
-    "static/js/787.78651efa.chunk.js": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js",
-    "static/media/s2.jpg": "/FullyFunctional-ReactWebApp/static/media/s2.a2f1474e9aff4d36bec1.jpg",
-    "static/media/s3.jpg": "/FullyFunctional-ReactWebApp/static/media/s3.e3462f4fec092e25ef95.jpg",
-    "static/media/pxfuel.jpg": "/FullyFunctional-ReactWebApp/static/media/pxfuel.e8177407926712cec188.jpg",
-    "static/media/s1.jpg": "/FullyFunctional-ReactWebApp/static/media/s1.19a71bb140926c0ed832.jpg",
-    "static/media/bootstrap-icons.woff?": "/FullyFunctional-ReactWebApp/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
-    "static/media/cmpny.jpg": "/FullyFunctional-ReactWebApp/static/media/cmpny.e87923810d62aec4d3b6.jpg",
-    "static/media/bootstrap-icons.woff2?": "/FullyFunctional-ReactWebApp/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
-    "static/media/cmpnyagain.jpg": "/FullyFunctional-ReactWebApp/static/media/cmpnyagain.66ac11430cf94fcd87c3.jpg",
-    "static/media/wp.webp": "/FullyFunctional-ReactWebApp/static/media/wp.427d5eb7f8eca4493312.webp",
-    "static/media/reviewer.png": "/FullyFunctional-ReactWebApp/static/media/reviewer.c073ef9e13c39e0aabab.png",
-    "static/media/firstback.jpg": "/FullyFunctional-ReactWebApp/static/media/firstback.4a87738bb75ed9848658.jpg",
-    "static/media/revicons.eot": "/FullyFunctional-ReactWebApp/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/FullyFunctional-ReactWebApp/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/FullyFunctional-ReactWebApp/static/media/revicons.e8746a624ed098489406.woff",
-    "index.html": "/FullyFunctional-ReactWebApp/index.html",
-    "main.f7462965.css.map": "/FullyFunctional-ReactWebApp/static/css/main.f7462965.css.map",
-    "main.5cb0fdc8.js.map": "/FullyFunctional-ReactWebApp/static/js/main.5cb0fdc8.js.map",
-    "787.78651efa.chunk.js.map": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js.map"
+    "main.css": "/static/css/main.1b3387c0.css",
+    "main.js": "/static/js/main.e4c5f913.js",
+    "static/js/787.78651efa.chunk.js": "/static/js/787.78651efa.chunk.js",
+    "static/media/s2.jpg": "/static/media/s2.a2f1474e9aff4d36bec1.jpg",
+    "static/media/s3.jpg": "/static/media/s3.e3462f4fec092e25ef95.jpg",
+    "static/media/pxfuel.jpg": "/static/media/pxfuel.e8177407926712cec188.jpg",
+    "static/media/s1.jpg": "/static/media/s1.19a71bb140926c0ed832.jpg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
+    "static/media/cmpny.jpg": "/static/media/cmpny.e87923810d62aec4d3b6.jpg",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
+    "static/media/cmpnyagain.jpg": "/static/media/cmpnyagain.66ac11430cf94fcd87c3.jpg",
+    "static/media/wp.webp": "/static/media/wp.427d5eb7f8eca4493312.webp",
+    "static/media/reviewer.png": "/static/media/reviewer.c073ef9e13c39e0aabab.png",
+    "static/media/firstback.jpg": "/static/media/firstback.4a87738bb75ed9848658.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.1b3387c0.css.map": "/static/css/main.1b3387c0.css.map",
+    "main.e4c5f913.js.map": "/static/js/main.e4c5f913.js.map",
+    "787.78651efa.chunk.js.map": "/static/js/787.78651efa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7462965.css",
-    "static/js/main.5cb0fdc8.js"
+    "static/css/main.1b3387c0.css",
+    "static/js/main.e4c5f913.js"
   ]
 }
