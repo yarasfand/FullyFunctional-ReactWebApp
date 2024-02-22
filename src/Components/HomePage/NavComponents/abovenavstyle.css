@@ -1,98 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
 }
 
+.topOfTheNav {
+  background-color: #f9f8f8;
+}
 
-.topNav{
-    background: #E26142;
-    color: #fff;
-    margin: 0 65px;
-    padding: 0 20px;
-    position: relative;
-    height: 49px;
+.topNav {
+  background: #e26142;
+  color: #fff;
+  margin: 0 65px;
+  padding: 0 20px;
+  position: relative;
+  height: 49px;
 }
 
 .topNav:before {
-    position: absolute;
-    left: -30px;
-    top: -33px;
-    width: 35px;
-    height: 79px;
-    content: "";
-    background: #de856f;
-    transform: rotate(-40deg);
+  position: absolute;
+  left: -30px;
+  top: -33px;
+  width: 35px;
+  height: 79px;
+  content: "";
+  background: #de856f;
+  transform: rotate(-40deg);
 }
 
 .topNav:after {
-    position: absolute;
-    right: -30px;
-    top: -33px;
-    width: 35px;
-    height: 79px;
-    content: "";
-    background: #E26142;
-    -ms-transform: rotate(40deg);
-    -webkit-transform: rotate(40deg);
-    transform: rotate(40deg);
-    display: table;
-    content: " ";
+  position: absolute;
+  right: -30px;
+  top: -33px;
+  width: 35px;
+  height: 79px;
+  content: "";
+  background: #e26142;
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  display: table;
+  content: " ";
 }
 
-@media (min-width: 992px) and (max-width: 1199px)
-{.top-bar p {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top-bar p {
     font-size: 14px;
     padding: 9px 10px;
-}
+  }
 }
 
-
-.topNavText{
-    float: left;
-    background: #de856f;
-    font-size: 17px;
-    padding: 12px 30px;
-    margin: 0 0 0 -20px;
-    font-weight: 400;
-    position: relative;
+.topNavText {
+  float: left;
+  background: #de856f;
+  font-size: 17px;
+  padding: 12px 30px;
+  margin: 0 0 0 -20px;
+  font-weight: 400;
+  position: relative;
 }
 
 .topNavText:after {
-    position: absolute;
-    right: -30px;
-    top: -33px;
-    width: 35px;
-    height: 79px;
-    content: "";
-    background: #de856f;
-    -ms-transform: rotate(40deg);
-    -webkit-transform: rotate(40deg);
-    transform: rotate(40deg);
+  position: absolute;
+  right: -30px;
+  top: -33px;
+  width: 35px;
+  height: 79px;
+  content: "";
+  background: #de856f;
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
 }
 
-.topNav-list{
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+.topNav-list {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
-.topNav-list li{
-    float: right;
-    list-style: none;
-    font-size: 1em;
-    padding-left: 0.4em;
-    margin: 13px 24px 0;
-    position: relative;
-    display: list-item;
+.topNav-list li {
+  float: right;
+  list-style: none;
+  font-size: 1em;
+  padding-left: 0.4em;
+  margin: 13px 24px 0;
+  position: relative;
+  display: list-item;
 }
 
-@media (min-width: 992px) and (max-width: 1199px)
-{.top-bar ul li {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top-bar ul li {
     font-size: 13px;
     margin: 13px 24px 0;
-}
+  }
 }

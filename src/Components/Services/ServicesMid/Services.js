@@ -30,7 +30,7 @@ const servicesData = [
 function Services() {
   return (
     <div className="ServicesContainer m-1">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center m-0 ">
         <div className="col-md-8">
           <div className="services-carousel" style={{ overflowY: "hidden", textAlign: "center" }}>
             {servicesData.map((service, index) => (

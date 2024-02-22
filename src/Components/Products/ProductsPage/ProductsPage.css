@@ -1,7 +1,6 @@
 .products {
   display: flex;
   width: 100%;
-  margin: 1rem;
 }
 
 .sortSection {

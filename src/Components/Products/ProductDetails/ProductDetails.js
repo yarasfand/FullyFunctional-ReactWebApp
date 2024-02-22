@@ -17,7 +17,6 @@ function ProductDetails() {
     const productsInDetails = [
         {
             title: "Product 1",
-            subtitle: "Subtitle 1",
             description: "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
             price: 50,
             type: "FingerPrintScanners",
@@ -25,7 +24,6 @@ function ProductDetails() {
         },
         {
             title: "Product 2",
-            subtitle: "Subtitle 2",
             description: "Description 2",
             price: 60,
             type: "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -84,7 +82,6 @@ function ProductDetails() {
                     </div>
                     <div className="right-side">
                         <div className="wrapper">
-                            <h3>{selectedProduct.subtitle}</h3>
                             <h4 className="title">
                                 {selectedProduct.title}
                             </h4>
@@ -96,14 +93,7 @@ function ProductDetails() {
                                     <h2 className="price">${selectedProduct.price}</h2>
                                 </div>
                             </div>
-                            <div className="buy-buttons">
-                                <div className="add-to-cart">
-                                    <button  >
-                                        <img src="./images/icon-cart-white.svg" alt="" />
-                                        Get A Quote
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </main>

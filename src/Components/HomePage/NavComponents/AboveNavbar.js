@@ -23,7 +23,7 @@ function AboveNavbar() {
   }
 
   return (
-    <header>
+    <header className="topOfTheNav">
       <div className="topNav">
         <p className="topNavText">Pioneer Time System.</p>
         <ul className="topNav-list">
