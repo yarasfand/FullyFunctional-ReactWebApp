@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FullyFunctional-ReactWebApp%20%20/static/css/main.6472a0cf.css",
+    "main.css": "/FullyFunctional-ReactWebApp%20%20/static/css/main.f73313ce.css",
     "main.js": "/FullyFunctional-ReactWebApp%20%20/static/js/main.62adcccf.js",
     "static/js/787.78651efa.chunk.js": "/FullyFunctional-ReactWebApp%20%20/static/js/787.78651efa.chunk.js",
     "static/media/s2.jpg": "/FullyFunctional-ReactWebApp%20%20/static/media/s2.a2f1474e9aff4d36bec1.jpg",
@@ -20,12 +20,12 @@
     "static/media/revicons.ttf": "/FullyFunctional-ReactWebApp%20%20/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/FullyFunctional-ReactWebApp%20%20/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/FullyFunctional-ReactWebApp%20%20/index.html",
-    "main.6472a0cf.css.map": "/FullyFunctional-ReactWebApp%20%20/static/css/main.6472a0cf.css.map",
+    "main.f73313ce.css.map": "/FullyFunctional-ReactWebApp%20%20/static/css/main.f73313ce.css.map",
     "main.62adcccf.js.map": "/FullyFunctional-ReactWebApp%20%20/static/js/main.62adcccf.js.map",
     "787.78651efa.chunk.js.map": "/FullyFunctional-ReactWebApp%20%20/static/js/787.78651efa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6472a0cf.css",
+    "static/css/main.f73313ce.css",
     "static/js/main.62adcccf.js"
   ]
 }
