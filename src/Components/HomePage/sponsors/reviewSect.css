@@ -26,8 +26,14 @@ body {
 
 @media (max-width: 600px) {
   .sponsor-image {
-    width: 25vw; /* Allow images to retain their original size */
-    max-width: none; /* Remove maximum width restriction */
+    width: 25vw; 
+    max-width: none;
   }
 }
 
+@media (max-width: 320px) {
+  .sponsor-image {
+    width: 20vw; 
+    max-width: none; 
+  }
+}
