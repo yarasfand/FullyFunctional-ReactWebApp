@@ -1,6 +1,6 @@
 // HomePageRoutes.js
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import HomePageMain from "../Components/HomePage/homePageBody/HomePageMain";
 import AboutUs from "../Components/AboutUs/AboutUsMain/AboutUs";
 import ServicesMain from "../Components/Services/ServicesMainComp/ServicesMain";
@@ -10,6 +10,7 @@ import ProductDetails from "../Components/Products/ProductDetails/ProductDetails
 
 function HomePageRoutes() {
   return (
+
     <Routes>
       <Route exact path="/" element={<HomePageMain/>} /> 
       <Route path="/about-us" element={<AboutUs />} />

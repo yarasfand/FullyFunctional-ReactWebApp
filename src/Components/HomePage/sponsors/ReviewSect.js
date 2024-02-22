@@ -10,24 +10,24 @@ import sp7 from "./sponsorAssets/sp1.png";
 import sp8 from "./sponsorAssets/sp2.png";
 
 function ReviewSect() {
-  // Array of sponsor image paths
+  
   const sponsorImages = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8];
 
-  // State to store the column class
+  
   const [columnClass, setColumnClass] = useState("col-3");
 
-  // Effect to update column class on window resize
+  
   useEffect(() => {
     function handleResize() {
       setColumnClass(window.innerWidth < 600 ? "col-6" : "col-3");
     }
-    // Add event listener for window resize
+    
     window.addEventListener("resize", handleResize);
-    // Cleanup function
+   
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); // Empty dependency array ensures effect runs only once after initial render
+  }, []); 
 
   return (
     <div>
