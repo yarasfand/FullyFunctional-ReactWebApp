@@ -2,7 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css"; // Import the CSS for the ImageGallery component
+import "react-image-gallery/styles/css/image-gallery.css"; 
 import "./ProductDetails.css";
 
 import detailImage1 from "./ProductDetailsAssets/cmpny.jpg";
@@ -35,14 +35,14 @@ function ProductDetails() {
     const [showNav, setShowNav] = useState(window.innerWidth < 1000);
 
     useEffect(() => {
-        // Add an event listener for window resize
+        
         const handleResize = () => {
             setShowNav(window.innerWidth < 1000);
         };
 
         window.addEventListener("resize", handleResize);
 
-        // Clean up the event listener when the component unmounts
+       
         return () => {
             window.removeEventListener("resize", handleResize);
         };

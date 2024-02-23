@@ -13,7 +13,6 @@ const servicesData = [
       "Our Attendance and Payroll Management (Cloud) service offers a comprehensive solution designed to streamline your company's attendance tracking and payroll processes efficiently and securely, all hosted on the cloud for accessibility and scalability.",
     features: [
       {
-        title: "Features",
         items: [
           {
             feature: "Cloud-based Convenience",
@@ -29,41 +28,6 @@ const servicesData = [
             feature: "Effortless Payroll Processing",
             detail:
               "With our service, payroll processing becomes a breeze. We offer automated payroll calculations, tax deductions, and direct deposit capabilities, saving you time and effort while ensuring accuracy and compliance with legal regulations.",
-          },
-          {
-            feature: "Employee Self-Service",
-            detail:
-              "Empower your employees with self-service features, allowing them to access their attendance records, submit time-off requests, and view their pay stubs conveniently through a user-friendly portal.",
-          },
-          {
-            feature: "Customizable Reporting",
-            detail:
-              "Gain valuable insights into your workforce with customizable reporting tools. Our system generates detailed reports on attendance trends, overtime hours, leave balances, and payroll summaries, enabling informed decision-making and strategic planning.",
-          },
-          {
-            feature: "Scalable and Secure",
-            detail:
-              "Whether you're a small business or a large enterprise, our service is scalable to meet your needs. Plus, we prioritize security with robust data encryption, access controls, and compliance with industry standards to keep your sensitive information safe.",
-          },
-          {
-            feature: "Integration Capabilities",
-            detail:
-              "Seamlessly integrate our service with your existing HR and accounting systems for enhanced efficiency and data consistency across your organization.",
-          },
-        ],
-      },
-      {
-        title: "Benefits",
-        items: [
-          {
-            feature: "Time and Cost Savings",
-            detail:
-              "By automating attendance tracking and payroll processing, our service helps reduce administrative overhead and minimize the risk of errors, ultimately saving your company time and money.",
-          },
-          {
-            feature: "Improved Compliance",
-            detail:
-              "Stay compliant with labor laws and regulations effortlessly, thanks to our system's built-in compliance features and regular updates to reflect changes in legislation.",
           },
           {
             feature: "Enhanced Employee Satisfaction",
@@ -86,7 +50,6 @@ const servicesData = [
       "Take your gym management to the next level with our Gym Management Solution (Cloud). Our comprehensive platform offers a range of features designed to enhance the efficiency and effectiveness of your gym operations, all accessible securely on the cloud.",
     features: [
       {
-        title: "Key Features",
         items: [
           {
             feature: "Member Management",
@@ -103,36 +66,7 @@ const servicesData = [
             detail:
               "Streamline billing processes and automate payment collections, reducing administrative overhead and improving cash flow.",
           },
-          {
-            feature: "Equipment and Facility Management",
-            detail:
-              "Track and maintain gym equipment, manage facility maintenance schedules, and ensure a safe and well-maintained environment for members.",
-          },
-          {
-            feature: "Staff Management",
-            detail:
-              "Manage staff schedules, roles, and performance, streamlining communication and coordination among your gym team.",
-          },
-          {
-            feature: "Reporting and Analytics",
-            detail:
-              "Access detailed reports and analytics on member engagement, revenue performance, class attendance, and other key metrics to make data-driven decisions.",
-          },
-          {
-            feature: "Member Engagement Tools",
-            detail:
-              "Engage and retain members with interactive features such as personalized workout plans, progress tracking, and social community features.",
-          },
-        ],
-      },
-      {
-        title: "Benefits",
-        items: [
-          {
-            feature: "Improved Member Experience",
-            detail:
-              "Provide a seamless and enjoyable experience for your gym members with easy access to class schedules, online booking, and personalized services.",
-          },
+
           {
             feature: "Efficient Operations",
             detail:
@@ -148,16 +82,6 @@ const servicesData = [
             detail:
               "Empower your staff with tools to efficiently manage their tasks, communicate effectively, and focus on delivering exceptional service to members.",
           },
-          {
-            feature: "Actionable Insights",
-            detail:
-              "Gain valuable insights into member behavior, preferences, and trends through advanced analytics, enabling targeted marketing efforts and strategic business decisions.",
-          },
-          {
-            feature: "Scalability and Flexibility",
-            detail:
-              "Grow your gym business with a scalable and flexible solution that adapts to your changing needs and supports expansion into new markets or offerings.",
-          },
         ],
       },
     ],
@@ -169,33 +93,20 @@ const servicesData = [
       "Our Customized Software Solutions are tailored to meet the unique needs of your business. Whether you require a bespoke application, database management system, or enterprise software suite, we can develop a solution that aligns with your objectives and enhances your operations. With our expertise in custom software development, we leverage the latest technologies and methodologies to create tailored solutions that address your specific requirements. Our solutions are designed to scale with your business and adapt to changing needs, ensuring long-term value and flexibility for your organization.",
     features: [
       {
-        title: "Key Features",
         items: [
           {
             feature: "Custom Development",
             detail:
               "Tailored software solutions designed specifically for your business needs, ensuring optimal functionality and usability.",
           },
-          {
-            feature: "Scalability",
-            detail:
-              "Solutions are designed to grow and adapt alongside your business, accommodating changing requirements and expanding operations.",
-          },
+
           {
             feature: "Integration Capabilities",
             detail:
               "Seamlessly integrate custom software with existing systems and platforms to streamline workflows and improve efficiency.",
           },
-          {
-            feature: "User-Centric Design",
-            detail:
-              "User-friendly interfaces and intuitive navigation enhance user experience, promoting adoption and productivity.",
-          },
-          {
-            feature: "Customizable Reporting",
-            detail:
-              "Gain valuable insights into your workforce with customizable reporting tools. Our system generates detailed reports on attendance trends, overtime hours, leave balances, and payroll summaries, enabling informed decision-making and strategic planning.",
-          },
+
+
           {
             feature: "Advanced Functionality",
             detail:
@@ -206,26 +117,9 @@ const servicesData = [
             detail:
               "Robust security measures are implemented to protect sensitive data and safeguard against cyber threats, ensuring compliance with regulatory standards.",
           },
-        ],
-      },
-      {
-        title: "Benefits",
-        items: [
-          {
-            feature: "Increased Efficiency",
-            detail:
-              "Automate repetitive tasks and streamline workflows, reducing manual effort and improving operational efficiency.",
-          },
-          {
-            feature: "Enhanced Productivity",
-            detail:
-              "Custom software solutions are designed to optimize business processes, enabling employees to focus on core activities and achieve more in less time.",
-          },
-          {
-            feature: "Improved Decision-Making",
-            detail:
-              "Access to real-time data and advanced analytics empowers informed decision-making, driving strategic initiatives and business growth.",
-          },
+
+
+
           {
             feature: "Cost Savings",
             detail:
@@ -253,7 +147,10 @@ function Services() {
     <div className="ServicesContainer m-1">
       <div className="row justify-content-center m-0 ">
         <div className="col-md-8">
-          <div className="services-carousel" style={{ overflowY: "hidden", textAlign: "center" }}>
+          <div
+            className="services-carousel"
+            style={{ overflowY: "hidden", textAlign: "center" }}
+          >
             {servicesData.map((service, index) => (
               <div key={index} className="text-center">
                 <Carousel>
@@ -268,20 +165,35 @@ function Services() {
                     </Carousel.Item>
                   ))}
                 </Carousel>
+
                 <div className="service-info">
-                  <h3>{service.title}</h3>
+
+                  <h3 className="service-info-heading">{service.title}</h3>
+                  
                   <p>{service.description}</p>
+
+
+
+                  
                   {service.features &&
                     service.features.map((featureGroup, featureGroupIndex) => (
                       <div key={featureGroupIndex}>
-                        <h4>{featureGroup.title}</h4>
-                        <ul className="service-features">
+                        <ol
+                          style={{ "--length": featureGroup.items.length }}
+                          className="service-features"
+                        >
                           {featureGroup.items.map((item, itemIndex) => (
-                            <li key={itemIndex}>
-                              <strong className="service-item-feature" >{item.feature} :</strong> <br/>{item.detail}
+                            <li
+                              key={itemIndex}
+                              style={{ "--i": itemIndex + 1 }}
+                            >
+                              <h3 className="service-item-feature">
+                                {item.feature}{" "}
+                              </h3>
+                              <p> {item.detail} </p>
                             </li>
                           ))}
-                        </ul>
+                        </ol>
                       </div>
                     ))}
                 </div>
