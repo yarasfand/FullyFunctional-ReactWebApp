@@ -13,15 +13,30 @@
   width: 50vw !important;
 }
 
-.service-description {
+.service-info {
   margin: 2rem 0 2rem 0;
 }
 
-.service-description h3 {
+.service-info h3 {
   text-align: center;
 }
 
+.service-info p{
+  text-align: justify;
+}
 
+.service-features{
+  text-align: left;
+}
+
+.service-item-feature {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.service-features{
+  list-style: armenian;
+}
 
 @media (max-width: 768px) {
   .additional-content 
