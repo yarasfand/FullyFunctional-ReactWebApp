@@ -153,9 +153,12 @@ function Services() {
           >
             {servicesData.map((service, index) => (
               <div key={index} className="text-center">
-                <Carousel>
+                <Carousel 
+                >
                   {service.images.map((image, imageIndex) => (
-                    <Carousel.Item key={imageIndex} className="w-60">
+                    <Carousel.Item 
+                    key={imageIndex}
+                    className="w-60">
                       <img
                         className="d-block w-100"
                         src={image}
@@ -166,15 +169,15 @@ function Services() {
                   ))}
                 </Carousel>
 
+                
+                
+                
                 <div className="service-info">
 
                   <h3 className="service-info-heading">{service.title}</h3>
-                  
                   <p>{service.description}</p>
 
-
-
-                  
+ 
                   {service.features &&
                     service.features.map((featureGroup, featureGroupIndex) => (
                       <div key={featureGroupIndex}>

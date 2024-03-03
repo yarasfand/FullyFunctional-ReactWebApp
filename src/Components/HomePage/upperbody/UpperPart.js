@@ -1,5 +1,5 @@
 import React from "react";
-import sideImage from "../homePageAssets/images/cmpny.jpg";
+import sideImage from "../homePageAssets/images/banner1.png";
 import "./upperPart.css";
 
 function UpperPart() {
