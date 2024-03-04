@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.37edcc86.css",
+    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.020abfc0.css",
     "main.js": "/FullyFunctional-ReactWebApp/static/js/main.06684874.js",
     "static/js/787.78651efa.chunk.js": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js",
     "static/media/banner2.png": "/FullyFunctional-ReactWebApp/static/media/banner2.327e17fe7a9aa2ebd38c.png",
@@ -30,12 +30,12 @@
     "static/media/revicons.ttf": "/FullyFunctional-ReactWebApp/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/FullyFunctional-ReactWebApp/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/FullyFunctional-ReactWebApp/index.html",
-    "main.37edcc86.css.map": "/FullyFunctional-ReactWebApp/static/css/main.37edcc86.css.map",
+    "main.020abfc0.css.map": "/FullyFunctional-ReactWebApp/static/css/main.020abfc0.css.map",
     "main.06684874.js.map": "/FullyFunctional-ReactWebApp/static/js/main.06684874.js.map",
     "787.78651efa.chunk.js.map": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37edcc86.css",
+    "static/css/main.020abfc0.css",
     "static/js/main.06684874.js"
   ]
 }
