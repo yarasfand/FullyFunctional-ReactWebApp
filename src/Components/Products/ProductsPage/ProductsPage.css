@@ -4,14 +4,16 @@
 }
 
 .sortSection {
+  margin-top: 1rem;
   width: 15vw;
   margin-right: 1rem;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .productContain {
+  display: flex;
+  flex-wrap: wrap;
   margin: 1px;
-  width: 85vw;
 }
 
 .productsWholeContainer {
@@ -21,11 +23,12 @@
 }
 
 .productData {
-  height: 34vh;
-  width: 34vw;
+  flex-grow: 1;
+  height: max-content;
   overflow: hidden;
   margin: 0.3rem;
   display: flex;
+  flex-direction: row;
   border-radius: 7px;
   background-color: rgb(239, 239, 239);
 }
@@ -35,19 +38,21 @@
   max-width: 50%;
   object-fit: cover;
   border-radius: 7px 0 0 7px;
+  padding: 10px;
 }
 
 .productInfo {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 50%;
   padding: 0.5rem;
   box-sizing: border-box;
 }
 
-.productInfo>p {
-  font-family: "Playfair Display", serif;
+.productInfo > p {
   color: #8d8d8d;
-  font-size: 0.5999rem;
+  font-size: 0.8rem; /* Updated font size */
   font-weight: lighter;
   overflow: hidden;
   margin-bottom: 0.5rem;
@@ -56,43 +61,14 @@
 .productInfo>h3 {
   font-size: 1.4rem;
   color: #474747;
-  font-family: "Bentham", serif;
 }
 
 .productInfo>h4 {
   font-size: 1rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #d2d2d2;
-  letter-spacing: 0.2em;
+  color: black;
 }
 
-@media (max-width: 753px) {
-  .productData {
-    width: 65vw;
-    height: 30vh;
-  }
-}
 
-@media (max-height: 580px) {
-  .productData {
-    height: 40vh;
-  }
-}
-
-@media (max-height: 510px) {
-  .productData {
-    height: 45vh;
-  }
-}
-
-@media (max-height: 510px) and (max-width: 990px) {
-  .productData {
-    height: 50vh;
-    width: 40vw;
-  }
-}
 
 .productbtn {
   box-sizing: border-box;
@@ -104,10 +80,11 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  background-color: #9cebd5;
+  background-color: #e26142;
   cursor: pointer;
   outline: none;
 }
+
 
 .timelineItem {
   cursor: pointer;
@@ -121,6 +98,13 @@
 .sortSection p {
   cursor: pointer;
 }
+
+.sortSection{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 
 .infoSpan:hover {
   text-decoration: underline;
@@ -137,122 +121,67 @@
 
 
 
-@media (max-height: 530px) and (max-width: 770px) {
-  .productData {
-    height: 40vh;
-    width: 35vw;
+@media (max-width: 650px){
+  .productContain {
+    flex-direction: column;
+  }
+  .sortSection {
+    width: 25vw;
   }
 
-  .infoSpan,
-  .sortSection p {
-    font-size: 10px;
-    cursor: pointer;
-  }
-
-  .productbtn {
-    border-radius: 30px;
-    font-size: 10px;
-    letter-spacing: 0px;
-  }
-
-  .productInfo>p {
-    font-size: 8px;
-  }
-
-  .productInfo>h3 {
-    font-size: 15px;
-  }
-
-  .productInfo>h4 {
-    font-size: 10px;
+  .sortSection p{
+    font-size: 12px;
   }
 }
 
-
-@media  (max-width: 535px) {
-  .productData {
-    height: 30vh;
+@media (max-width: 400px){
+  .productInfo h3{
+    font-size: 12px;
   }
-  .products {
-    margin-top: 0.7rem;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom:  0.5rem;
-
-  }
-  
-
-  .infoSpan,
-  .sortSection p {
+  .productInfo h4 {
     font-size: 10px;
-    cursor: pointer;
   }
 
   .productbtn {
-    border-radius: 30px;
-    font-size: 10px;
-    letter-spacing: 0px;
-  }
-
-  .productInfo>p {
-    font-size: 8px;
-  }
-
-  .productInfo>h3 {
-    font-size: 15px;
-  }
-
-  .productInfo>h4 {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 330px) {
-  .productData {
-    height: 35vh;
-    margin-left: 12px;
-  }
-  .productbtn {
-    border-radius: 30px;
-    font-size: 8px;
-    letter-spacing: 0px;
-  }
-}
-
-@media (max-height: 580px) and (max-width: 500px) {
-  .productData {
-    height: 40vh;
-    width: 70vw;
+    border-radius: 60px;
+    font-size: 0.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
   }
 
   .sortSection {
-    margin-top: 1rem;
-    width: 15vw;
-    margin-right: 1rem;
-    margin-left: 20px;
+    width: 25vw;
   }
 
-  .infoSpan,
-  .sortSection p {
-    font-size: 7px;
-    cursor: pointer;
+  .sortSection p{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 850px) {
+
+  .productInfo h3{
+    font-size: 14px;
+  }
+  .productInfo h4 {
+    font-size: 12px;
   }
 
   .productbtn {
-    border-radius: 30px;
-    font-size: 10px;
-    letter-spacing: 0px;
+    border-radius: 60px;
+    font-size: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
   }
 
-  .productInfo>p {
-    font-size: 8px;
-  }
 
-  .productInfo>h3 {
-    font-size: 15px;
-  }
+}
 
-  .productInfo>h4 {
-    font-size: 10px;
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .sortSection p{
+    font-size: 12px;
   }
 }

@@ -1,30 +1,35 @@
 import React from "react";
 import "./footer.css";
 import { FcGoogle } from "react-icons/fc";
-import { FaTwitter, FaLocationArrow, FaPhone } from "react-icons/fa";
+import {
+  FaLocationArrow,
+  FaPhone,
+  FaMailBulk,
+} from "react-icons/fa";
 import { SocialIcon } from "react-social-icons";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer ">
       <div className="container bottom_border">
         <div className="row">
           <div className="col-sm-4 col-md col-sm-4 col-12 col">
             <h5 className="headin5_amrc col_white_amrc pt2">Find us</h5>
             <p className="mb10">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              Pioneer Time System distributes a range of time recording products
+              across Pakistan, serving over 2,000 customers with offices in
+              Lahore and Karachi.
             </p>
             <p>
-              <FaLocationArrow /> 9878/25 sec 9 rohini 35
+              <FaLocationArrow />
+              1-Harson Street, Ravi Road, Lahore
             </p>
             <p>
-              <FaPhone /> +91-9999878398
+              <FaPhone />
+              +(92) 304 4976411
             </p>
             <p>
-              <FaPhone /> info@example.com
+              <FaMailBulk /> asim@pioneertimesystem.com
             </p>
           </div>
 
@@ -32,78 +37,60 @@ function Footer() {
             <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
             <ul className="footer_ul_amrc">
               <li>
-                <a href="http://webenlance.com">Image Rectoucing</a>
+                <a href="#products">Products</a>
               </li>
               <li>
-                <a href="http://webenlance.com">Clipping Path</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Hollow Man Montage</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Ebay & Amazon</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Hair Masking/Clipping</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Image Cropping</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-sm-4 col-md col-6 col">
-            <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
-            <ul className="footer_ul_amrc">
-              <li>
-                <a href="http://webenlance.com">Remove Background</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Shadows & Mirror Reflection</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Logo Design</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Vectorization</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Hair Masking/Clipping</a>
-              </li>
-              <li>
-                <a href="http://webenlance.com">Image Cropping</a>
+                <a href="#services">Services</a>
               </li>
             </ul>
           </div>
 
           <div className="col-sm-4 col-md col-12 col">
             <h5 className="headin5_amrc col_white_amrc pt2">Follow us</h5>
-            <ul className="footer_ul2_amrc">
+            <ul className="footer_ul2_amrc ">
               <li>
-                <a href="fwlkolw">
-                  <FaTwitter className="fab fa-twitter fleft padding-right" />{" "}
-                </a>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing...{" "}
-                  <a href="hello">https://www.lipsum.com/</a>
+                <SocialIcon
+                network="instagram"
+                style={{ width: "20px", height: "20px" , margin : "2px" }}
+              />
+                  <a
+                    href="https://www.instagram.com/pioneertimesystem"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Instagram
+                  </a>
                 </p>
               </li>
               <li>
-                <a href="ok">
-                  <FaTwitter className="fab fa-twitter fleft padding-right" />{" "}
-                </a>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing...{" "}
-                  <a href="usfhik">https://www.lipsum.com/</a>
+                <SocialIcon
+                network="facebook"
+                style={{ width: "20px", height: "20px" , margin : "2px" }}
+              />
+                  <a
+                    href="https://www.facebook.com/pioneertimesystem"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Facebook
+                  </a>
                 </p>
               </li>
               <li>
-                <a href="yes">
-                  <FaTwitter className="fab fa-twitter fleft padding-right" />{" "}
-                </a>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing...{" "}
-                  <a href="ik">https://www.lipsum.com/</a>
+                <SocialIcon
+                network="linkedin"
+                style={{ width: "20px", height: "20px" , margin : "2px" }}
+              />
+                  <a
+                    href="https://www.linkedin.com/company/pioneer-time-system"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Linkedin
+                  </a>
                 </p>
               </li>
             </ul>
@@ -112,16 +99,20 @@ function Footer() {
       </div>
 
       <div className="container">
-        <p className="text-center">
+        {/* <p className="text-center">
           Copyright @2017 | Designed With by{" "}
           <a href="okoadko" className="cmpnyanchor">
             Pioneer
           </a>
-        </p>
+        </p> */}
 
         <ul className="social_footer_ul">
           <li>
-            <a href="http://webenlance.com">
+            <a
+              href="https://www.facebook.com/pioneertimesystem"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SocialIcon
                 network="facebook"
                 style={{ width: "35px", height: "35px" }}
@@ -129,7 +120,11 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="http://google.com" target="_blank" rel="noreferrer">
+          <a
+              href="https://www.instagram.com/pioneertimesystem"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SocialIcon
                 network="instagram"
                 style={{ width: "35px", height: "35px" }}
@@ -137,19 +132,27 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="http://google.com" target="_blank" rel="noreferrer">
+            <a
+              href="http://google.com/search?q=pioneer+clocks"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="lift-up">
                 <FcGoogle style={{ width: "35px", height: "35px" }} />
               </div>
             </a>
           </li>
           <li>
-            <Link href="http://google.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/company/pioneer-time-system"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SocialIcon
                 network="linkedin"
                 style={{ width: "35px", height: "35px" }}
               />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

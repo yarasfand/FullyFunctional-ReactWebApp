@@ -31,10 +31,10 @@ function AboveNavbar() {
             <i className="bi bi-hourglass-split"></i> Mon to Fri 08:00 - 16:00
           </li>
           <li>
-            <i className="bi bi-geo-alt-fill"></i> Napier Road
+          <i className="bi bi-telephone"></i>  +(92) 300 9449446
           </li>
           <li>
-            <i className="bi bi-telephone"></i> +(92) 111 222 3330
+            <i className="bi bi-telephone"></i>  +(92) 304 4976411
           </li>
         </ul>
       </div>

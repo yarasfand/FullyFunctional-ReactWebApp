@@ -40,7 +40,6 @@ function MidCarousel() {
 
   return (
     <div>
-
       <div className="carousel-padding">
         <div className="midCarouselHeadindiv flex-column">
           <h3>We Love What We Do</h3>
@@ -49,6 +48,7 @@ function MidCarousel() {
             eiusmod tempor exercitationemut labore.
           </p>
         </div>
+
         <Carousel
           renderDotsOutside
           showDots
@@ -80,8 +80,8 @@ function MidCarousel() {
               <i className="bi bi-buildings"></i>
             </h1>
             <br />
-            <h3 className="cardheading">About Us</h3>
-            <p>{generateLoremIpsum()}</p>
+            <h3 className="cardheading">Monitoring Office</h3>
+            <p>Monitor Your office with Bio-metric Systems</p>
           </div>
 
           <div
@@ -95,11 +95,11 @@ function MidCarousel() {
             }}
           >
             <h1 className="cardemoji">
-              <i className="bi bi-buildings"></i>
+              <i class="bi bi-gear"></i>
             </h1>
             <br />
-            <h3 className="cardheading">About Us</h3>
-            <p>{generateLoremIpsum()}</p>
+            <h3 className="cardheading">Support</h3>
+            <p>Our Technical Team Available For Help</p>
           </div>
 
           <div
@@ -113,14 +113,46 @@ function MidCarousel() {
             }}
           >
             <h1 className="cardemoji">
-              <i className="bi bi-cart"></i>
+              <i class="bi bi-star"></i>
             </h1>
             <br />
-            <h3 className="cardheading">Consumer Consulting</h3>
-            <p>{generateLoremIpsum()}</p>
+            <h3 className="cardheading">Great quality</h3>
+            <p>We Have Great Quality Products</p>
           </div>
-          <div className="item" style={{ height: "400px" }}>
-            Carousel Item 4
+          <div
+            className="item"
+            style={{
+              height: "400px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <h1 className="cardemoji">
+              <i class="bi bi-gear"></i>
+            </h1>
+            <br />
+            <h3 className="cardheading">Support</h3>
+            <p>Our Technical Team Available For Help</p>
+          </div>
+
+          <div
+            className="item"
+            style={{
+              height: "400px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <h1 className="cardemoji">
+              <i class="bi bi-star"></i>
+            </h1>
+            <br />
+            <h3 className="cardheading">Great quality</h3>
+            <p>{generateLoremIpsum()}</p>
           </div>
           <div className="item" style={{ height: "400px" }}>
             Carousel Item 5
@@ -131,11 +163,17 @@ function MidCarousel() {
         </Carousel>
       </div>
 
-
       <div className="belowmidCarousel flex-row">
-        <p>If you have any querry for related investment... We are available</p>
-        <div  className="buttonDiv">
-          <button className="button">
+        <p>Interested in our Products ? Don't wait and contact us now!</p>
+        <div className="buttonDiv">
+          <button
+            className="button"
+            onClick={() => {
+              const phoneNumber = "923044976411";
+              const whatsappUrl = `https://wa.me/${phoneNumber}`;
+              window.open(whatsappUrl, "_blank");
+            }}
+          >
             <span className="button__text">
               <span>G</span>
               <span>E</span>T
@@ -147,7 +185,11 @@ function MidCarousel() {
             <span>T</span>
             <span>E</span>
 
-            <svg className="button__svg" role="presentational" viewBox="0 0 600 600">
+            <svg
+              className="button__svg"
+              role="presentational"
+              viewBox="0 0 600 600"
+            >
               <defs>
                 <clipPath id="myClip">
                   <rect x="0" y="0" width="100%" height="50%" />

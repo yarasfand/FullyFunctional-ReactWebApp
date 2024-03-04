@@ -18,21 +18,43 @@ function ContactUsPageForm() {
               <br />
               <p>Feel free to send me a message in the contact form</p>
               <div className="social contactUsSocial">
-              <a href="http://google.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.facebook.com/pioneertimesystem"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <SocialIcon
                     network="facebook"
                     style={{ width: "35px", height: "35px" }}
                   />
                 </a>
-                <a href="http://google.com" target="_blank" rel="noreferrer">
+                <a 
+                  href="https://www.instagram.com/pioneertimesystem"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <SocialIcon
                     network="instagram"
                     style={{ width: "37px", height: "37px" }}
                   />
                 </a>
-                <a href="http://google.com" target="_blank" rel="noreferrer">
+                <a
+                    href="https://www.linkedin.com/company/pioneer-time-system"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                   <SocialIcon
                     network="linkedin"
+                    style={{ width: "35px", height: "35px" }}
+                  />
+                </a>
+                <a
+                    href= "https://wa.me/923044976411"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                  <SocialIcon
+                    network="whatsapp"
                     style={{ width: "35px", height: "35px" }}
                   />
                 </a>
@@ -64,6 +86,7 @@ function ContactUsPageForm() {
                   rows="4"
                   placeholder="Message"
                   className="contactUsTextArea"
+                
                 ></textarea>
                 <button className="contactUsSubmit"> Submit</button>
               </form>

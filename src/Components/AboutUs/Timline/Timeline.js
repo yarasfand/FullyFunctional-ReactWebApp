@@ -6,13 +6,10 @@ function TimeLine() {
     <div className="timeLine">
       <section className="design-section">
         <div className="timeline-Intro">
-          <h2>Company History <i className="bi bi-buildings"></i></h2>
-          <p>
-            It is pleasure, but because those who do not know how to pursue
-            pleasure rationally encounter consequences that are extremely
-            painful. Nor again is there anyone who loves or pursues or desires
-            to obtain pain of itself.
-          </p>
+          <h2>
+            Company History <i className="bi bi-buildings"></i>
+          </h2>
+          <p>70 Years of Excellence. You Can Count On Us!</p>
         </div>
         <div className="timeline">
           <div className="timeline-empty"></div>

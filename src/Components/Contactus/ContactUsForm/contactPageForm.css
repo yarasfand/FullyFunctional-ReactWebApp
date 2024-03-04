@@ -6,6 +6,8 @@
   position: relative;
   overflow: hidden;
 }
+
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -73,6 +75,7 @@ h2 {
   margin: 8px 0;
   width: 100%;
   font-size: 0.8rem;
+  resize: none;
 }
 
 .contactUsInput:focus,

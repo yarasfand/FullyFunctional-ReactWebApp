@@ -140,11 +140,54 @@ const servicesData = [
     ],
     images: [image3, image1, image2],
   },
+  {
+    title: "Clocks Manufacturing",
+    description:
+      "Take your gym management to the next level with our Gym Management Solution (Cloud). Our comprehensive platform offers a range of features designed to enhance the efficiency and effectiveness of your gym operations, all accessible securely on the cloud.",
+    features: [
+      {
+        items: [
+          {
+            feature: "Member Management",
+            detail:
+              "Efficiently manage your gym members, including registration, membership plans, attendance tracking, and member communications.",
+          },
+          {
+            feature: "Class and Schedule Management",
+            detail:
+              "Organize and schedule classes, sessions, and appointments with ease, allowing members to book and attend sessions conveniently.",
+          },
+          {
+            feature: "Billing and Payment Processing",
+            detail:
+              "Streamline billing processes and automate payment collections, reducing administrative overhead and improving cash flow.",
+          },
+
+          {
+            feature: "Efficient Operations",
+            detail:
+              "Optimize your gym operations with streamlined processes for membership management, scheduling, billing, and staff coordination, saving time and resources.",
+          },
+          {
+            feature: "Increased Revenue",
+            detail:
+              "Maximize revenue potential with automated billing and payment processing, effective member retention strategies, and data-driven pricing decisions.",
+          },
+          {
+            feature: "Enhanced Staff Productivity",
+            detail:
+              "Empower your staff with tools to efficiently manage their tasks, communicate effectively, and focus on delivering exceptional service to members.",
+          },
+        ],
+      },
+    ],
+    images: [image2, image3, image1],
+  }
 ];
 
 function Services() {
   return (
-    <div className="ServicesContainer m-1">
+    <div className="ServicesContainer m-1" id="services">
       <div className="row justify-content-center m-0 ">
         <div className="col-md-8">
           <div
