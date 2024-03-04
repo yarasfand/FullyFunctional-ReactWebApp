@@ -335,7 +335,7 @@ function ProductsPage() {
                     <h4 className="product-subtilte">{product.subtitle}</h4>
                     {/* <p>{product.description}</p> */}
                     <Link to={`/home/products/${product.type}`}>
-                      <Button variant="primary" className="productbtn">
+                      <Button  className="productbtn">
                         See Details
                       </Button>
                     </Link>
