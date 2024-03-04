@@ -8,36 +8,36 @@ import image3 from "../ServicesMid/ServicesMidAssets/s3.jpg";
 
 const servicesData = [
   {
-    title: "Attendance and Payroll Management (Cloud)",
+    title: "Multi location cloud attendance and Payroll solution",
     description:
-      "Our Attendance and Payroll Management (Cloud) service offers a comprehensive solution designed to streamline your company's attendance tracking and payroll processes efficiently and securely, all hosted on the cloud for accessibility and scalability.",
+      "Our Multi-location Cloud Attendance and Payroll Solution is a comprehensive system designed to streamline attendance tracking and payroll management for businesses with multiple locations. With this solution, companies can efficiently manage employee attendance, generate accurate payroll reports, and ensure compliance with labor regulations across all their branches or offices.",
     features: [
       {
         items: [
           {
-            feature: "Cloud-based Convenience",
+            feature: "Centralized Attendance Tracking",
             detail:
-              "Our service operates entirely in the cloud, providing you with seamless access from anywhere, anytime. This means you can manage attendance and process payroll remotely, whether you're in the office, at home, or on the go.",
+              "Easily monitor attendance records of employees across multiple locations from a centralized dashboard. Gain real-time insights into attendance patterns, late arrivals, and absences to optimize workforce management.",
           },
           {
-            feature: "Automated Attendance Tracking",
+            feature: "Cloud-Based Platform",
             detail:
-              "Say goodbye to manual attendance tracking! Our system automates the process, capturing attendance data accurately and in real-time. This helps eliminate errors, ensures compliance with company policies, and provides valuable insights into employee attendance patterns.",
+              "Access attendance and payroll data anytime, anywhere with secure cloud storage. Enjoy the flexibility of managing your workforce remotely while ensuring data security and integrity.",
           },
           {
-            feature: "Effortless Payroll Processing",
+            feature: "Integrated Payroll Management",
             detail:
-              "With our service, payroll processing becomes a breeze. We offer automated payroll calculations, tax deductions, and direct deposit capabilities, saving you time and effort while ensuring accuracy and compliance with legal regulations.",
+              "Automate payroll processing for employees across all locations with seamless integration between attendance data and payroll calculations. Eliminate manual errors and ensure accurate and timely salary disbursement.",
           },
           {
-            feature: "Enhanced Employee Satisfaction",
+            feature: "Customized Reporting",
             detail:
-              "Provide your employees with a modern, user-friendly platform that simplifies attendance management and payroll-related tasks, leading to higher employee satisfaction and engagement.",
+              "Generate comprehensive reports tailored to your business needs, including attendance summaries, overtime calculations, and payroll breakdowns by location or department. Analyze trends and make informed decisions to improve operational efficiency.",
           },
           {
-            feature: "Data-Driven Insights",
+            feature: "Scalable and Flexible",
             detail:
-              "Leverage the power of data analytics to gain actionable insights into your workforce, enabling you to make informed decisions and optimize resource allocation.",
+              "Our solution is scalable to accommodate the growing needs of your business, whether you have two locations or two hundred. Easily add new locations, departments, or employees as your business expands, without compromising on performance or reliability.",
           },
         ],
       },
@@ -45,42 +45,37 @@ const servicesData = [
     images: [image1, image2, image3],
   },
   {
-    title: "Gym Management Solution (Cloud)",
+    title: "Guard tour systems",
     description:
-      "Take your gym management to the next level with our Gym Management Solution (Cloud). Our comprehensive platform offers a range of features designed to enhance the efficiency and effectiveness of your gym operations, all accessible securely on the cloud.",
+      "Our Guard Tour Systems offer a robust solution for managing security patrols across various locations, providing comprehensive surveillance and incident reporting capabilities. Utilizing advanced technology, these systems track and monitor security personnel as they perform their patrols, ensuring adherence to designated routes and timely response to incidents.",
     features: [
       {
         items: [
           {
-            feature: "Member Management",
+            feature: "Automated patrol tracking",
             detail:
-              "Efficiently manage your gym members, including registration, membership plans, attendance tracking, and member communications.",
+              " Utilizes RFID or NFC technology to automatically record patrol checkpoints, ensuring thorough surveillance coverage.",
           },
           {
-            feature: "Class and Schedule Management",
+            feature: "Real-time alerts and notifications",
             detail:
               "Organize and schedule classes, sessions, and appointments with ease, allowing members to book and attend sessions conveniently.",
           },
           {
-            feature: "Billing and Payment Processing",
+            feature: "Customizable patrol routes",
             detail:
-              "Streamline billing processes and automate payment collections, reducing administrative overhead and improving cash flow.",
+              " Allows for the creation of tailored patrol routes based on specific security requirements and site layouts.",
           },
 
           {
-            feature: "Efficient Operations",
+            feature: "Digital incident reporting",
             detail:
-              "Optimize your gym operations with streamlined processes for membership management, scheduling, billing, and staff coordination, saving time and resources.",
+              "Enables security personnel to quickly and accurately report incidents, attaching photos or notes for detailed documentation and analysis.",
           },
           {
-            feature: "Increased Revenue",
+            feature: "Integration capabilities",
             detail:
-              "Maximize revenue potential with automated billing and payment processing, effective member retention strategies, and data-driven pricing decisions.",
-          },
-          {
-            feature: "Enhanced Staff Productivity",
-            detail:
-              "Empower your staff with tools to efficiently manage their tasks, communicate effectively, and focus on delivering exceptional service to members.",
+              "Seamlessly integrates with other security systems such as CCTV cameras and access control systems, providing a unified security management platform for enhanced efficiency and effectiveness.",
           },
         ],
       },
@@ -88,52 +83,39 @@ const servicesData = [
     images: [image2, image3, image1],
   },
   {
-    title: "Customized Software Solutions",
+    title: "Clocks manufacturing",
     description:
-      "Our Customized Software Solutions are tailored to meet the unique needs of your business. Whether you require a bespoke application, database management system, or enterprise software suite, we can develop a solution that aligns with your objectives and enhances your operations. With our expertise in custom software development, we leverage the latest technologies and methodologies to create tailored solutions that address your specific requirements. Our solutions are designed to scale with your business and adapt to changing needs, ensuring long-term value and flexibility for your organization.",
+      "Our Clocks Manufacturing services provide high-quality, precision-engineered timekeeping solutions tailored to meet diverse needs across industries. With a focus on innovation and craftsmanship, we deliver reliable and aesthetically pleasing clocks that enhance both functionality and ambiance in various environments.",
     features: [
       {
         items: [
           {
-            feature: "Custom Development",
+            feature: "Customized design options",
             detail:
-              "Tailored software solutions designed specifically for your business needs, ensuring optimal functionality and usability.",
+              "Offer a wide range of customizable clock designs to suit different architectural styles and interior aesthetics.",
           },
 
           {
-            feature: "Integration Capabilities",
+            feature: "Advanced timekeeping technology",
             detail:
-              "Seamlessly integrate custom software with existing systems and platforms to streamline workflows and improve efficiency.",
+              " Incorporate cutting-edge clock mechanisms and synchronization methods for accurate timekeeping across multiple time zones and environments.",
           },
 
 
           {
-            feature: "Advanced Functionality",
+            feature: "Durability and reliability",
             detail:
-              "Implement advanced features and capabilities to automate processes, improve decision-making, and drive innovation.",
+              " Utilize premium materials and manufacturing processes to ensure long-lasting performance and minimal maintenance requirements, even in challenging environments.",
           },
           {
-            feature: "Security",
+            feature: "Energy efficiency",
             detail:
-              "Robust security measures are implemented to protect sensitive data and safeguard against cyber threats, ensuring compliance with regulatory standards.",
-          },
-
-
-
-          {
-            feature: "Cost Savings",
-            detail:
-              " Customized solutions eliminate the need for multiple off-the-shelf software licenses and reduce reliance on manual processes, resulting in cost savings over time.",
+              "Prioritize energy-efficient designs and components to minimize power consumption and environmental impact.",
           },
           {
-            feature: "Competitive Advantage",
+            feature: "Compliance and certification",
             detail:
-              " Tailored software solutions give your business a competitive edge by aligning with unique requirements and enabling differentiation in the market.",
-          },
-          {
-            feature: "Long-Term Value",
-            detail:
-              "Custom software solutions offer long-term value by adapting to changing business needs and evolving technology landscapes, ensuring continued relevance and functionality.",
+              "Adhere to industry standards and regulations, obtaining necessary certifications to guarantee quality, safety, and compliance with regulatory requirements.",
           },
         ],
       },
@@ -141,48 +123,84 @@ const servicesData = [
     images: [image3, image1, image2],
   },
   {
-    title: "Clocks Manufacturing",
+    title: "Access control solution",
     description:
-      "Take your gym management to the next level with our Gym Management Solution (Cloud). Our comprehensive platform offers a range of features designed to enhance the efficiency and effectiveness of your gym operations, all accessible securely on the cloud.",
+      "Our Access Control Solutions offer comprehensive security measures to regulate and monitor entry to premises effectively. Utilizing cutting-edge technology and robust systems, we provide customizable access control solutions tailored to meet the unique needs of businesses, institutions, and organizations.",
     features: [
       {
         items: [
           {
-            feature: "Member Management",
+            feature: "Advanced authentication methods",
             detail:
-              "Efficiently manage your gym members, including registration, membership plans, attendance tracking, and member communications.",
+              " Implement a range of authentication methods such as biometric recognition (fingerprint, facial recognition), smart cards, PIN codes, and mobile credentials to ensure secure access.",
           },
           {
-            feature: "Class and Schedule Management",
+            feature: "Centralized management",
             detail:
-              "Organize and schedule classes, sessions, and appointments with ease, allowing members to book and attend sessions conveniently.",
+              " Employ centralized management systems that allow administrators to easily configure access permissions, track user activity, and generate reports for auditing and compliance purposes.",
           },
           {
-            feature: "Billing and Payment Processing",
+            feature: "Integration capabilities",
             detail:
-              "Streamline billing processes and automate payment collections, reducing administrative overhead and improving cash flow.",
+              " Seamlessly integrate access control systems with other security systems such as CCTV, alarms, and intercoms to create a comprehensive security ecosystem.",
           },
 
           {
-            feature: "Efficient Operations",
+            feature: "Scalability and flexibility",
             detail:
-              "Optimize your gym operations with streamlined processes for membership management, scheduling, billing, and staff coordination, saving time and resources.",
+              "Offer scalable solutions that can adapt to the changing needs of businesses, from small offices to large enterprises, and flexible configurations to accommodate various access control scenarios.",
           },
           {
-            feature: "Increased Revenue",
+            feature: "Enhanced security features",
             detail:
-              "Maximize revenue potential with automated billing and payment processing, effective member retention strategies, and data-driven pricing decisions.",
+              "Provide additional security features such as anti-passback, dual authentication, and intrusion detection to enhance the overall security posture of the premises.",
+          },
+         
+        ],
+      },
+    ],
+    images: [image2, image3, image1],
+  },
+  {
+    title: "Vehicle Access control solution",
+    description:
+      "Our Vehicle Control Access Solutions offer efficient management of vehicular access to restricted areas, parking facilities, and premises. Using state-of-the-art technology and intelligent systems, we ensure seamless and secure control over vehicle entry and exit points.",
+    features: [
+      {
+        items: [
+          {
+            feature: "Access authorization",
+            detail:
+              "Enable access authorization mechanisms such as proximity cards, key fobs, or mobile credentials to grant or deny access to vehicles based on predefined permissions.",
           },
           {
-            feature: "Enhanced Staff Productivity",
+            feature: "Real-time monitoring",
             detail:
-              "Empower your staff with tools to efficiently manage their tasks, communicate effectively, and focus on delivering exceptional service to members.",
+              " Utilize real-time monitoring and surveillance capabilities to track vehicle movements, detect unauthorized vehicles, and trigger alerts for immediate response.",
           },
+          {
+            feature: "Integration with security systems",
+            detail:
+              "Integrate vehicle access control systems with existing security infrastructure, including CCTV cameras, alarms, and access control systems, to enhance overall security and situational awareness.",
+          },
+
+          {
+            feature: "Customizable configurations",
+            detail:
+              "Offer customizable configurations to accommodate various deployment scenarios, including parking lots, gated communities, industrial complexes, and commercial premises, with options for remote management and access control policies.",
+          },
+          {
+            feature: "Automated gate systems",
+            detail:
+              "Implement automated gate systems equipped with plate recognition cameras, and barrier gates to streamline vehicle entry and exit processes.",
+          },
+         
         ],
       },
     ],
     images: [image2, image3, image1],
   }
+
 ];
 
 function Services() {

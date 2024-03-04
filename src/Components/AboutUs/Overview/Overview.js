@@ -16,19 +16,13 @@ function Overview() {
             Time Clocks, document stamps, and software-based time and attendance
             systems. We have a network of over 2,000 Customers and two office
             supply outlets in the Lahore and Karachi.
-          </p>
-
-          <br />
-
-          <p>
+            <br />
+            <br />
             The company’s iconic Nippo punch clocks are widely recognized
             throughout the Pakistan. Our Model NTR-2600 and Model TimeBoy7, and
             biometric Facial Recognition Model PT-1000
-          </p>
-
-          <br />
-
-          <p>
+            <br />
+            <br />
             Pioneer Time System helps Hundreds of businesses around the country
             save time and money every day through more accurate time and
             attendance tracking and more efficient payroll processing. If you

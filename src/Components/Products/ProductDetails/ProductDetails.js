@@ -1,5 +1,4 @@
-// ProductDetails.js
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -7,14 +6,14 @@ import "./ProductDetails.css";
 
 import productImage1 from "../ProducstAssets/product1.png";
 import productImage2 from "../ProducstAssets/product2.png";
-import productImage3 from "../ProducstAssets/product3.jpg";
+import productImage3 from "../ProducstAssets/product3.png";
 import productImage4 from "../ProducstAssets/product4.png";
 import productImage5 from "../ProducstAssets/product5.png";
 import productImage6 from "../ProducstAssets/product6.png";
-import productImage7 from "../ProducstAssets/product7.jpg";
+import productImage7 from "../ProducstAssets/product7.png";
 import productImage8 from "../ProducstAssets/product8.png";
 import productImage9 from "../ProducstAssets/product9.png";
-import productImage10 from "../ProducstAssets/product10.jpg";
+import productImage10 from "../ProducstAssets/product10.png";
 import productImage11 from "../ProducstAssets/product11.png";
 import Footer from "../../HomePage/footer/Footer";
 import FeatureList from "./FeatureList";
@@ -63,7 +62,7 @@ function ProductDetails() {
             images: [{ original: productImage1 }],
         },
         {
-            title: "PT 1000 Mini",
+            title: "PT-1000 Mini",
             features: [
                 "Fingerprint",
                 "RF Card",
@@ -322,7 +321,7 @@ function ProductDetails() {
             images: [{ original: productImage8 }],
         },
         {
-            title: "Smart Camera c7",
+            title: "Pioneer Smart Camera c7",
             features: [
                 "3MP Camera",
                 "Motion Detection",
@@ -372,19 +371,12 @@ function ProductDetails() {
     ];
 
     const imageGalleryRef = useRef(null);
-    const [showNav, setShowNav] = useState(window.innerWidth < 1000);
+    
 
     useEffect(() => {
-        const handleResize = () => {
-            setShowNav(window.innerWidth < 1000);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
+        window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
     }, []);
+
 
     const selectedProduct = productsInDetails.find(
         (product) => product.type === productType
@@ -413,7 +405,6 @@ function ProductDetails() {
                                 showPlayButton={false}
                                 showFullscreenButton={false}
                                 lazyLoad={true}
-                                showNav={showNav}
                                 slideDuration={300}
                             />
                         </div>
@@ -425,11 +416,11 @@ function ProductDetails() {
                             <div className="main-text">
                                 <FeatureList features={selectedProduct.features} />
                             </div>
-                            <div className="prices">
+                            {/* <div className="prices">
                                 <div className="price-and-discount">
                                     <h2 className="price">${selectedProduct.price}</h2>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="main-text">
                                 {selectedProduct.specifications && (
                                     <Specifications specifications={selectedProduct.specifications} />

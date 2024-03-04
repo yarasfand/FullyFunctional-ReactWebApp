@@ -1,22 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ProductsPage.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import product1 from "../ProducstAssets/product1.png";
 import product2 from "../ProducstAssets/product2.png";
-import product3 from "../ProducstAssets/product3.jpg";
+import product3 from "../ProducstAssets/product3.png";
 import product4 from "../ProducstAssets/product4.png";
 import product5 from "../ProducstAssets/product5.png";
 import product6 from "../ProducstAssets/product6.png";
-import product7 from "../ProducstAssets/product7.jpg";
+import product7 from "../ProducstAssets/product7.png";
 import product8 from "../ProducstAssets/product8.png";
 import product9 from "../ProducstAssets/product9.png";
-import product10 from "../ProducstAssets/product10.jpg";
+import product10 from "../ProducstAssets/product10.png";
 import product11 from "../ProducstAssets/product11.png";
 import { Link } from "react-router-dom";
 import Footer from "../../HomePage/footer/Footer";
 function ProductsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []);
+
   const products = [
     {
       title: "PT-1000",
@@ -105,7 +109,7 @@ function ProductsPage() {
     },
     {
       title: "Smart Camera c7",
-      subtitle: "Realtime Smart Camera",
+      subtitle: "Pioneer Smart Camera",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
       price: 60,
@@ -115,7 +119,7 @@ function ProductsPage() {
     },
     {
       title: "SDL 700",
-      subtitle: "Realtime Smart Devices",
+      subtitle: "Pioneer Smart Access Control",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
       price: 60,
@@ -126,7 +130,7 @@ function ProductsPage() {
 
     {
       title: "SDL A7",
-      subtitle: "Realtime Smart Devices",
+      subtitle: "Pioneer Smart Access Control",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
       price: 60,
@@ -155,6 +159,10 @@ function ProductsPage() {
         setShowSmartDevices(!showSmartDevices);
         break;
 
+      case "all":
+        setSelectedType(null); // Reset selectedType to show all products
+        break;
+
       default:
         break;
     }
@@ -174,6 +182,15 @@ function ProductsPage() {
     <>
       <div className="products" id="products">
         <section className="sortSection">
+          <p
+            onClick={() => handleToggleDetails("all")} // Toggle to show all products
+            className={`productItems ${
+              selectedType === null ? "prodActive" : ""
+            }`}
+          >
+            All
+          </p>
+
           <p
             className={`timelineItem ${showAccessControl ? "selected" : ""}`}
             onClick={() => handleToggleDetails("accessControl")}

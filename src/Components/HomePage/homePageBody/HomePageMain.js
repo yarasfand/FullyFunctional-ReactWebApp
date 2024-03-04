@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import HeroSlider from "../firstHeroSlider/HeroSlider";
 import UpperPart from "../upperbody/UpperPart";
 import MidCarousel from "../midbody/MidCarousel";
@@ -8,6 +8,9 @@ import Footer from "../footer/Footer";
 
 
 function HomePageMain(){
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+      }, []);
     return(
         <div>
             <HeroSlider/>

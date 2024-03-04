@@ -1,11 +1,8 @@
 import React from "react";
+import logo from "./footerAssets/logo.png";
 import "./footer.css";
 import { FcGoogle } from "react-icons/fc";
-import {
-  FaLocationArrow,
-  FaPhone,
-  FaMailBulk,
-} from "react-icons/fa";
+import { FaLocationArrow, FaPhone, FaMailBulk } from "react-icons/fa";
 import { SocialIcon } from "react-social-icons";
 
 function Footer() {
@@ -13,7 +10,11 @@ function Footer() {
     <footer className="footer ">
       <div className="container bottom_border">
         <div className="row">
-          <div className="col-sm-4 col-md col-sm-4 col-12 col">
+          <div className="col-sm-4 col-md col-sm-4 col-12 col d-flex justify-content-center align-items-center">
+            <img src={logo} alt="Logo" style={{ margin: "auto" }} />
+          </div>
+
+          <div className="col-sm-4 col-md col-sm-4 col-12 col text-center">
             <h5 className="headin5_amrc col_white_amrc pt2">Find us</h5>
             <p className="mb10">
               Pioneer Time System distributes a range of time recording products
@@ -21,77 +22,27 @@ function Footer() {
               Lahore and Karachi.
             </p>
             <p>
-              <FaLocationArrow />
+              <FaLocationArrow style={{ marginRight: "5px" }} />
               1-Harson Street, Ravi Road, Lahore
             </p>
             <p>
-              <FaPhone />
+              <FaPhone style={{ marginRight: "5px" }} />
               +(92) 304 4976411
             </p>
             <p>
-              <FaMailBulk /> asim@pioneertimesystem.com
+              <FaMailBulk style={{ marginRight: "5px" }} />{" "}
+              asim@pioneertimesystem.com
             </p>
           </div>
 
-          <div className="col-sm-4 col-md col-6 col">
-            <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
-            <ul className="footer_ul_amrc">
+          <div className="col-sm-4 col-md-4 col-6 mx-auto text-center">
+            <h5 className="headin5_amrc col_white_amrc pt2">Quick Links</h5>
+            <ul className="footer_ul_amrc no-bullets">
               <li>
                 <a href="#products">Products</a>
               </li>
               <li>
                 <a href="#services">Services</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-sm-4 col-md col-12 col">
-            <h5 className="headin5_amrc col_white_amrc pt2">Follow us</h5>
-            <ul className="footer_ul2_amrc ">
-              <li>
-                <p>
-                <SocialIcon
-                network="instagram"
-                style={{ width: "20px", height: "20px" , margin : "2px" }}
-              />
-                  <a
-                    href="https://www.instagram.com/pioneertimesystem"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Instagram
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p>
-                <SocialIcon
-                network="facebook"
-                style={{ width: "20px", height: "20px" , margin : "2px" }}
-              />
-                  <a
-                    href="https://www.facebook.com/pioneertimesystem"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Facebook
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p>
-                <SocialIcon
-                network="linkedin"
-                style={{ width: "20px", height: "20px" , margin : "2px" }}
-              />
-                  <a
-                    href="https://www.linkedin.com/company/pioneer-time-system"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Linkedin
-                  </a>
-                </p>
               </li>
             </ul>
           </div>
@@ -120,7 +71,7 @@ function Footer() {
             </a>
           </li>
           <li>
-          <a
+            <a
               href="https://www.instagram.com/pioneertimesystem"
               target="_blank"
               rel="noreferrer"

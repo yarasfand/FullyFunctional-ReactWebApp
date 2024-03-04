@@ -44,8 +44,8 @@ function MidCarousel() {
         <div className="midCarouselHeadindiv flex-column">
           <h3>We Love What We Do</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-            eiusmod tempor exercitationemut labore.
+            "We excel because we're passionate, we're passionate because we love
+            what we do."
           </p>
         </div>
 
