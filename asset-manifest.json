@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.a8548a5d.css",
-    "main.js": "/FullyFunctional-ReactWebApp/static/js/main.11431098.js",
+    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.12d48894.css",
+    "main.js": "/FullyFunctional-ReactWebApp/static/js/main.9af3f6ca.js",
     "static/js/787.78651efa.chunk.js": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js",
     "static/media/banner2.png": "/FullyFunctional-ReactWebApp/static/media/banner2.327e17fe7a9aa2ebd38c.png",
     "static/media/banner4.png": "/FullyFunctional-ReactWebApp/static/media/banner4.7b49a7345330750a47ba.png",
@@ -12,10 +12,10 @@
     "static/media/s1.jpg": "/FullyFunctional-ReactWebApp/static/media/s1.19a71bb140926c0ed832.jpg",
     "static/media/sp1.png": "/FullyFunctional-ReactWebApp/static/media/sp1.66d9d676c74c55f1536d.png",
     "static/media/bootstrap-icons.woff?": "/FullyFunctional-ReactWebApp/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
-    "static/media/product7.jpg": "/FullyFunctional-ReactWebApp/static/media/product7.bcb37fb8083d5cdfc6de.jpg",
+    "static/media/product7.png": "/FullyFunctional-ReactWebApp/static/media/product7.5a34985d0b66da722029.png",
+    "static/media/product3.png": "/FullyFunctional-ReactWebApp/static/media/product3.f571a8fd6d9d8dda2308.png",
     "static/media/product5.png": "/FullyFunctional-ReactWebApp/static/media/product5.32d0d2472a337fc47c28.png",
     "static/media/product1.png": "/FullyFunctional-ReactWebApp/static/media/product1.ff993e0563a89185d2ac.png",
-    "static/media/product3.jpg": "/FullyFunctional-ReactWebApp/static/media/product3.fac46b3cb2e1d7c50357.jpg",
     "static/media/product6.png": "/FullyFunctional-ReactWebApp/static/media/product6.f91e5a00fd81f2d49be7.png",
     "static/media/product2.png": "/FullyFunctional-ReactWebApp/static/media/product2.7ccdfe17e46830529b77.png",
     "static/media/product8.png": "/FullyFunctional-ReactWebApp/static/media/product8.dd4b5782414e08928ab1.png",
@@ -24,18 +24,18 @@
     "static/media/product4.png": "/FullyFunctional-ReactWebApp/static/media/product4.85564a9420b6eddc3e67.png",
     "static/media/sp5.png": "/FullyFunctional-ReactWebApp/static/media/sp5.ec521ccd5c4002901cb2.png",
     "static/media/product11.png": "/FullyFunctional-ReactWebApp/static/media/product11.bf28f1d2df6bce6c7da3.png",
-    "static/media/product10.jpg": "/FullyFunctional-ReactWebApp/static/media/product10.f1fc8e36deb562556045.jpg",
+    "static/media/product10.png": "/FullyFunctional-ReactWebApp/static/media/product10.3c61f6d0bf6efbfbc4b4.png",
     "static/media/cmpny.jpg": "/FullyFunctional-ReactWebApp/static/media/cmpny.e87923810d62aec4d3b6.jpg",
     "static/media/revicons.eot": "/FullyFunctional-ReactWebApp/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/FullyFunctional-ReactWebApp/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/FullyFunctional-ReactWebApp/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/FullyFunctional-ReactWebApp/index.html",
-    "main.a8548a5d.css.map": "/FullyFunctional-ReactWebApp/static/css/main.a8548a5d.css.map",
-    "main.11431098.js.map": "/FullyFunctional-ReactWebApp/static/js/main.11431098.js.map",
+    "main.12d48894.css.map": "/FullyFunctional-ReactWebApp/static/css/main.12d48894.css.map",
+    "main.9af3f6ca.js.map": "/FullyFunctional-ReactWebApp/static/js/main.9af3f6ca.js.map",
     "787.78651efa.chunk.js.map": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8548a5d.css",
-    "static/js/main.11431098.js"
+    "static/css/main.12d48894.css",
+    "static/js/main.9af3f6ca.js"
   ]
 }
