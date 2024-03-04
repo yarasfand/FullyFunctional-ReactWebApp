@@ -412,7 +412,7 @@ function ProductDetails() {
                     <div className="right-side">
                         <div className="wrapper">
                             <h4 className="title">{selectedProduct.title}</h4>
-                            <p className="main-text">{selectedProduct.description}</p>
+                            {/* <p className="main-text">{selectedProduct.description}</p> */}
                             <div className="main-text">
                                 <FeatureList features={selectedProduct.features} />
                             </div>
