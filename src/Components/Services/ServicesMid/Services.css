@@ -6,6 +6,8 @@
   width: 50vw !important;
 }
 
+
+
 .service-info {
   margin: 2rem 0 2rem 0;
 }
@@ -116,5 +118,12 @@
   .service-item-feature {
     font-size: 18px;
     margin: 0;
+  }
+
+  .service-info-heading {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5em;
   }
 }

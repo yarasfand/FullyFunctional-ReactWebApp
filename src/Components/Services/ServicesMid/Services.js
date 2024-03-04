@@ -8,7 +8,7 @@ import image3 from "../ServicesMid/ServicesMidAssets/s3.jpg";
 
 const servicesData = [
   {
-    title: "Multi location cloud attendance and Payroll solution",
+    title: "Multi-location cloud attendance and Payroll solution",
     description:
       "Our Multi-location Cloud Attendance and Payroll Solution is a comprehensive system designed to streamline attendance tracking and payroll management for businesses with multiple locations. With this solution, companies can efficiently manage employee attendance, generate accurate payroll reports, and ensure compliance with labor regulations across all their branches or offices.",
     features: [
@@ -101,7 +101,6 @@ const servicesData = [
               " Incorporate cutting-edge clock mechanisms and synchronization methods for accurate timekeeping across multiple time zones and environments.",
           },
 
-
           {
             feature: "Durability and reliability",
             detail:
@@ -155,7 +154,6 @@ const servicesData = [
             detail:
               "Provide additional security features such as anti-passback, dual authentication, and intrusion detection to enhance the overall security posture of the premises.",
           },
-         
         ],
       },
     ],
@@ -194,13 +192,11 @@ const servicesData = [
             detail:
               "Implement automated gate systems equipped with plate recognition cameras, and barrier gates to streamline vehicle entry and exit processes.",
           },
-         
         ],
       },
     ],
     images: [image2, image3, image1],
-  }
-
+  },
 ];
 
 function Services() {
@@ -214,31 +210,23 @@ function Services() {
           >
             {servicesData.map((service, index) => (
               <div key={index} className="text-center">
-                <Carousel 
-                >
+                <Carousel interval={6000}>
                   {service.images.map((image, imageIndex) => (
-                    <Carousel.Item 
-                    key={imageIndex}
-                    className="w-60">
+                    <Carousel.Item key={imageIndex} className="w-60">
                       <img
                         className="d-block w-100"
                         src={image}
                         alt={`ServiceImage ${index + 1} ${imageIndex + 1}`}
-                        style={{ height: "65vh", margin: "auto" }}
+                        style={{ height: "50vh", margin: "auto" }}
                       />
                     </Carousel.Item>
                   ))}
                 </Carousel>
 
-                
-                
-                
                 <div className="service-info">
-
                   <h3 className="service-info-heading">{service.title}</h3>
                   <p>{service.description}</p>
 
- 
                   {service.features &&
                     service.features.map((featureGroup, featureGroupIndex) => (
                       <div key={featureGroupIndex}>
