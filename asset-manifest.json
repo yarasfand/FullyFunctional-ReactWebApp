@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.3163fe5b.css",
-    "main.js": "/FullyFunctional-ReactWebApp/static/js/main.4e0b5a6f.js",
+    "main.css": "/FullyFunctional-ReactWebApp/static/css/main.a8548a5d.css",
+    "main.js": "/FullyFunctional-ReactWebApp/static/js/main.11431098.js",
     "static/js/787.78651efa.chunk.js": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js",
     "static/media/banner2.png": "/FullyFunctional-ReactWebApp/static/media/banner2.327e17fe7a9aa2ebd38c.png",
     "static/media/banner4.png": "/FullyFunctional-ReactWebApp/static/media/banner4.7b49a7345330750a47ba.png",
@@ -9,27 +9,33 @@
     "static/media/banner3.png": "/FullyFunctional-ReactWebApp/static/media/banner3.51b6a2070faa7d7cea85.png",
     "static/media/s2.jpg": "/FullyFunctional-ReactWebApp/static/media/s2.a2f1474e9aff4d36bec1.jpg",
     "static/media/s3.jpg": "/FullyFunctional-ReactWebApp/static/media/s3.e3462f4fec092e25ef95.jpg",
-    "static/media/pxfuel.jpg": "/FullyFunctional-ReactWebApp/static/media/pxfuel.e8177407926712cec188.jpg",
     "static/media/s1.jpg": "/FullyFunctional-ReactWebApp/static/media/s1.19a71bb140926c0ed832.jpg",
     "static/media/sp1.png": "/FullyFunctional-ReactWebApp/static/media/sp1.66d9d676c74c55f1536d.png",
     "static/media/bootstrap-icons.woff?": "/FullyFunctional-ReactWebApp/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
-    "static/media/cmpny.jpg": "/FullyFunctional-ReactWebApp/static/media/cmpny.e87923810d62aec4d3b6.jpg",
+    "static/media/product7.jpg": "/FullyFunctional-ReactWebApp/static/media/product7.bcb37fb8083d5cdfc6de.jpg",
+    "static/media/product5.png": "/FullyFunctional-ReactWebApp/static/media/product5.32d0d2472a337fc47c28.png",
+    "static/media/product1.png": "/FullyFunctional-ReactWebApp/static/media/product1.ff993e0563a89185d2ac.png",
+    "static/media/product3.jpg": "/FullyFunctional-ReactWebApp/static/media/product3.fac46b3cb2e1d7c50357.jpg",
+    "static/media/product6.png": "/FullyFunctional-ReactWebApp/static/media/product6.f91e5a00fd81f2d49be7.png",
+    "static/media/product2.png": "/FullyFunctional-ReactWebApp/static/media/product2.7ccdfe17e46830529b77.png",
+    "static/media/product8.png": "/FullyFunctional-ReactWebApp/static/media/product8.dd4b5782414e08928ab1.png",
+    "static/media/product9.png": "/FullyFunctional-ReactWebApp/static/media/product9.4848668bfa92761f4b48.png",
     "static/media/bootstrap-icons.woff2?": "/FullyFunctional-ReactWebApp/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
+    "static/media/product4.png": "/FullyFunctional-ReactWebApp/static/media/product4.85564a9420b6eddc3e67.png",
     "static/media/sp5.png": "/FullyFunctional-ReactWebApp/static/media/sp5.ec521ccd5c4002901cb2.png",
-    "static/media/cmpnyagain.jpg": "/FullyFunctional-ReactWebApp/static/media/cmpnyagain.66ac11430cf94fcd87c3.jpg",
-    "static/media/wp.webp": "/FullyFunctional-ReactWebApp/static/media/wp.427d5eb7f8eca4493312.webp",
-    "static/media/reviewer.png": "/FullyFunctional-ReactWebApp/static/media/reviewer.c073ef9e13c39e0aabab.png",
-    "static/media/firstback.jpg": "/FullyFunctional-ReactWebApp/static/media/firstback.4a87738bb75ed9848658.jpg",
+    "static/media/product11.png": "/FullyFunctional-ReactWebApp/static/media/product11.bf28f1d2df6bce6c7da3.png",
+    "static/media/product10.jpg": "/FullyFunctional-ReactWebApp/static/media/product10.f1fc8e36deb562556045.jpg",
+    "static/media/cmpny.jpg": "/FullyFunctional-ReactWebApp/static/media/cmpny.e87923810d62aec4d3b6.jpg",
     "static/media/revicons.eot": "/FullyFunctional-ReactWebApp/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/FullyFunctional-ReactWebApp/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/FullyFunctional-ReactWebApp/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/FullyFunctional-ReactWebApp/index.html",
-    "main.3163fe5b.css.map": "/FullyFunctional-ReactWebApp/static/css/main.3163fe5b.css.map",
-    "main.4e0b5a6f.js.map": "/FullyFunctional-ReactWebApp/static/js/main.4e0b5a6f.js.map",
+    "main.a8548a5d.css.map": "/FullyFunctional-ReactWebApp/static/css/main.a8548a5d.css.map",
+    "main.11431098.js.map": "/FullyFunctional-ReactWebApp/static/js/main.11431098.js.map",
     "787.78651efa.chunk.js.map": "/FullyFunctional-ReactWebApp/static/js/787.78651efa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3163fe5b.css",
-    "static/js/main.4e0b5a6f.js"
+    "static/css/main.a8548a5d.css",
+    "static/js/main.11431098.js"
   ]
 }
