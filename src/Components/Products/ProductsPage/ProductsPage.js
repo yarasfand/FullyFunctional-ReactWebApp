@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./ProductsPage.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -16,10 +16,57 @@ import product10 from "../ProducstAssets/product10.png";
 import product11 from "../ProducstAssets/product11.png";
 import { Link } from "react-router-dom";
 import Footer from "../../HomePage/footer/Footer";
+
 function ProductsPage() {
+
+  
+  const checkAndSaveImagesToLocalStorage = useCallback(() => {
+    try {
+      const images = [
+        { key: "product1", value: product1 },
+        { key: "product2", value: product2 },
+        { key: "product3", value: product3 },
+        { key: "product4", value: product4 },
+        { key: "product5", value: product5 },
+        { key: "product6", value: product6 },
+        { key: "product7", value: product7 },
+        { key: "product8", value: product8 },
+        { key: "product9", value: product9 },
+        { key: "product10", value: product10 },
+        { key: "product11", value: product11 },
+      ];
+
+      // Check if any image is missing in local storage
+      const anyImageMissing = images.some(
+        ({ key }) => !localStorage.getItem(key)
+      );
+
+      if (anyImageMissing) {
+        // If any image is missing, save all images to local storage
+        saveImagesToLocalStorage(images);
+      } else {
+        console.log("Images are already present in local storage.");
+      }
+    } catch (error) {
+      console.error(
+        "Error checking and saving images to local storage:",
+        error
+      );
+    }
+  }, []);
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
-  }, []);
+    checkAndSaveImagesToLocalStorage(); // Call function to check and save images to local storage
+  }, [checkAndSaveImagesToLocalStorage]);
+
+  // Function to save images to local storage
+  const saveImagesToLocalStorage = (images) => {
+    images.forEach(({ key, value }) => {
+      localStorage.setItem(key, value);
+    });
+    console.log("Images saved to local storage.");
+  };
 
   const products = [
     {
@@ -30,7 +77,7 @@ function ProductsPage() {
       price: 50,
       filter: "Face-with-finger-attendance",
       type: "PT-1000",
-      image: product1,
+      image:  localStorage.getItem("product1"),
     },
     {
       title: "PT-1000 Mini",
@@ -40,7 +87,7 @@ function ProductsPage() {
       price: 60,
       filter: "Face-with-finger-attendance",
       type: "PT-1000-Mini",
-      image: product2,
+      image:  localStorage.getItem("product2"),
     },
 
     {
@@ -51,7 +98,7 @@ function ProductsPage() {
       price: 60,
       filter: "Long-Range-Face",
       type: "PT-1500-Mini",
-      image: product3,
+      image:  localStorage.getItem("product3"),
     },
 
     {
@@ -62,7 +109,7 @@ function ProductsPage() {
       price: 60,
       filter: "Long-Range-Face",
       type: "PT-1500",
-      image: product4,
+      image:  localStorage.getItem("product4"),
     },
 
     {
@@ -73,7 +120,7 @@ function ProductsPage() {
       price: 60,
       filter: "Long-Range-Face",
       type: "PT-10000",
-      image: product5,
+      image:  localStorage.getItem("product5"),
     },
 
     {
@@ -84,7 +131,7 @@ function ProductsPage() {
       price: 60,
       filter: "FingerprinT-Pro",
       type: "PT-5000-Pro",
-      image: product6,
+      image:  localStorage.getItem("product6"),
     },
     {
       title: "PT-20000 Pro",
@@ -94,7 +141,7 @@ function ProductsPage() {
       price: 60,
       filter: "FingerprinT-Pro",
       type: "PT-20000-Pro",
-      image: product7,
+      image:  localStorage.getItem("product7"),
     },
 
     {
@@ -105,7 +152,7 @@ function ProductsPage() {
       price: 60,
       filter: "Face&FingerPro",
       type: "PT-600",
-      image: product8,
+      image:  localStorage.getItem("product8"),
     },
     {
       title: "Smart Camera c7",
@@ -115,7 +162,7 @@ function ProductsPage() {
       price: 60,
       filter: "Smart-Camera",
       type: "Smart-Camera-c7",
-      image: product9,
+      image:  localStorage.getItem("product9"),
     },
     {
       title: "SDL 700",
@@ -125,7 +172,7 @@ function ProductsPage() {
       price: 60,
       filter: "Smart-Door-Locks",
       type: "SDL-700",
-      image: product10,
+      image:  localStorage.getItem("product10"),
     },
 
     {
@@ -136,7 +183,7 @@ function ProductsPage() {
       price: 60,
       filter: "Smart-Door-Locks",
       type: "SDL-A7",
-      image: product11,
+      image:  localStorage.getItem("product11"),
     },
 
     // Add more products as needed
@@ -200,7 +247,11 @@ function ProductsPage() {
             onClick={() => handleToggleDetails("accessControl")}
           >
             <span className="infoSpan" style={{ paddingRight: "5px" }}>
-              {showAccessControl ? " -" : " +"}
+              {showAccessControl ? (
+                <i class="bi bi-arrow-down"></i>
+              ) : (
+                <i class="bi bi-arrow-right"></i>
+              )}
             </span>{" "}
             Access Control
           </p>
@@ -246,7 +297,11 @@ function ProductsPage() {
             onClick={() => handleToggleDetails("timeAttendance")}
           >
             <span className="infoSpan" style={{ marginRight: "5px" }}>
-              {showTimeAttendance ? " -" : " +"}
+              {showTimeAttendance ? (
+                <i class="bi bi-arrow-down"></i>
+              ) : (
+                <i class="bi bi-arrow-right"></i>
+              )}
             </span>{" "}
             Time Attendance
           </p>
@@ -268,7 +323,11 @@ function ProductsPage() {
             onClick={() => handleToggleDetails("SmartDevices")}
           >
             <span className="infoSpan" style={{ marginRight: "5px" }}>
-              {showSmartDevices ? " -" : " +"}
+              {showSmartDevices ? (
+                <i class="bi bi-arrow-down"></i>
+              ) : (
+                <i class="bi bi-arrow-right"></i>
+              )}
             </span>{" "}
             Smart Devices
           </p>
@@ -308,7 +367,11 @@ function ProductsPage() {
             onClick={() => handleToggleDetails("pioneerClocks")}
           >
             <span className="infoSpan" style={{ marginRight: "5px" }}>
-              {showTimeAttendance ? " -" : " +"}
+              {showPioneerClocks ? (
+                <i class="bi bi-arrow-down"></i>
+              ) : (
+                <i class="bi bi-arrow-right"></i>
+              )}
             </span>{" "}
             Pioneer Clocks
           </p>
