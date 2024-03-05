@@ -1,10 +1,10 @@
-import { React, useRef, useState} from "react";
+import { React, useRef, useState } from "react";
+
 import "./contactForm.css";
 import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
 
 function ContactForm() {
-
   const form = useRef();
   const [showSuccess, setShowSuccess] = useState(false);
 
@@ -24,13 +24,12 @@ function ContactForm() {
         // Set a timeout to hide the success notification after 2 seconds
         setTimeout(() => {
           setShowSuccess(false);
-        }, 2000);
+        }, 4000);  
       })
       .catch((error) => {
         console.error("Email could not be sent:", error);
       });
   };
-
 
   return (
     <div>
@@ -63,7 +62,7 @@ function ContactForm() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                   +(92) 304 4976411
+                    +(92) 304 4976411
                   </a>
                 </p>
               </address>
@@ -73,7 +72,11 @@ function ContactForm() {
               </p>
             </Col>
             <Col lg="7" className="d-flex align-items-center">
-              <form ref={form} onSubmit={sendEmail} className="contact__form w-100">
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="contact__form w-100"
+              >
                 <Row>
                   <Col lg="6" className="form-group">
                     <input
@@ -119,16 +122,18 @@ function ContactForm() {
       </div>
 
       {showSuccess && (
-          <div className="success-notification">
-            <p>Email sent successfully!</p>
-            <button
-              className="success-notification-button"
-              onClick={() => setShowSuccess(false)}
-            >
-              <i className="uil uil-times "></i>
-            </button>
+        <div className="success-notification active">
+          <div className="success-notification-div">
+            <div className="success-notification-icon">
+            <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <div className="success-notification-text">
+              <h4>Email sent successfully!</h4>
+              <p>Our support will contact you soon.</p>
+            </div>
           </div>
-        )}
+        </div>
+      )}
     </div>
   );
 }

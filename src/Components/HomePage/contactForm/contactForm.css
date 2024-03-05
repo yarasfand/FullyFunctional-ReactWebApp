@@ -117,33 +117,58 @@
   margin: 0.1em;
 }
 
-
 .success-notification {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
+  bottom: -100px; /* Start position at bottom of the screen */
+  left: 20px; /* Adjust this value to change the distance from the right */
+  background-color: rgb(7, 165, 7);
   z-index: 1000;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
-  color: hsl(var(--hue), var(--sat), 20%);;
-  transition: 0.3s;
+  animation: slideInUp 0.3s ease forwards; /* Use the slideInUp animation */
+  visibility: hidden; /* Initially hidden */
 }
 
-.success-notification > p {
+@keyframes slideInUp {
+  0% {
+    bottom: -100px;
+    visibility: visible; /* Ensure visibility when animation starts */
+  }
+  100% {
+    bottom: 20px; /* Adjust this value to change the final position */
+  }
+}
+
+.success-notification-div{
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.success-notification-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  color: hsl(var(--hue), var(--sat), 20%);
+.success-notification-icon{
+  align-self: center;
+  padding-right: 10px;
+  color: white;
 }
+
+.success-notification-text{
+  align-self: center;
+}
+
+.bi-check-circle-fill{
+  font-size: 26px;
+}
+.success-notification  p{
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #fff;
+}
+.success-notification  h4 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0 1rem;
+}
+
 
