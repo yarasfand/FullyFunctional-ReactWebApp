@@ -126,17 +126,29 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
   text-align: center;
-  animation: slideInUp 0.3s ease forwards; /* Use the slideInUp animation */
   visibility: hidden; /* Initially hidden */
+}
+
+.success-notification.active {
+  visibility: visible;
+  animation: slideInUp 0.5s ease forwards, slideOutDown 0.5s ease forwards 3s;
 }
 
 @keyframes slideInUp {
   0% {
     bottom: -100px;
-    visibility: visible; /* Ensure visibility when animation starts */
   }
   100% {
-    bottom: 20px; /* Adjust this value to change the final position */
+    bottom: 20px;
+  }
+}
+
+@keyframes slideOutDown {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: -100px;
   }
 }
 
