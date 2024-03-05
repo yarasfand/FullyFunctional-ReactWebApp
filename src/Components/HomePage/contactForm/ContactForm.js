@@ -1,8 +1,37 @@
-import React from "react";
+import { React, useRef, useState} from "react";
 import "./contactForm.css";
+import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
 
 function ContactForm() {
+
+  const form = useRef();
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_s0q766k", "template_lbmba35", form.current, {
+        publicKey: "sDWPwp0e3q0QAXpcp",
+      })
+      .then(() => {
+        // Email sent successfully, show success notification
+        setShowSuccess(true);
+        // Reset form after successful submission
+        e.target.reset();
+
+        // Set a timeout to hide the success notification after 2 seconds
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error("Email could not be sent:", error);
+      });
+  };
+
+
   return (
     <div>
       <div className="contactFormDiv">
@@ -44,7 +73,7 @@ function ContactForm() {
               </p>
             </Col>
             <Col lg="7" className="d-flex align-items-center">
-              <form className="contact__form w-100">
+              <form ref={form} onSubmit={sendEmail} className="contact__form w-100">
                 <Row>
                   <Col lg="6" className="form-group">
                     <input
@@ -88,6 +117,18 @@ function ContactForm() {
           </Row>
         </Container>
       </div>
+
+      {showSuccess && (
+          <div className="success-notification">
+            <p>Email sent successfully!</p>
+            <button
+              className="success-notification-button"
+              onClick={() => setShowSuccess(false)}
+            >
+              <i className="uil uil-times "></i>
+            </button>
+          </div>
+        )}
     </div>
   );
 }

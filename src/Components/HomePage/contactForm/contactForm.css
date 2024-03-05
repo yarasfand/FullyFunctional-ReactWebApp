@@ -37,6 +37,7 @@
 .contact__form .form-control {
   padding: 1.375rem 0.75rem;
   line-height: 1.5;
+  resize: none;
   color: #6d1702;
   background-color: #fff;
   border-radius: 0 !important;
@@ -115,3 +116,34 @@
   border: none;
   margin: 0.1em;
 }
+
+
+.success-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  color: hsl(var(--hue), var(--sat), 20%);;
+  transition: 0.3s;
+}
+
+.success-notification > p {
+  padding: 1rem;
+}
+
+.success-notification-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: hsl(var(--hue), var(--sat), 20%);
+}
+

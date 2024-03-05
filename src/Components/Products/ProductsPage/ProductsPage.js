@@ -145,6 +145,7 @@ function ProductsPage() {
   const [showAccessControl, setShowAccessControl] = useState(false);
   const [showSmartDevices, setShowSmartDevices] = useState(false);
   const [showTimeAttendance, setShowTimeAttendance] = useState(false);
+  const [showPioneerClocks, setShowPioneerClocks] = useState(false);
 
   const handleToggleDetails = (section) => {
     switch (section) {
@@ -159,6 +160,9 @@ function ProductsPage() {
         setShowSmartDevices(!showSmartDevices);
         break;
 
+      case "pioneerClocks":
+        setShowPioneerClocks(!showPioneerClocks);
+        break;
       case "all":
         setSelectedType(null); // Reset selectedType to show all products
         break;
@@ -300,24 +304,34 @@ function ProductsPage() {
           </p> */}
 
           <p
-            style={{ paddingLeft: "3px" }}
-            onClick={() => setSelectedType("Wall-Clocks")}
-            className={`productItems ${
-              selectedType === "Wall-Clocks" ? " prodActive" : ""
-            }`}
+            className={`timelineItem ${showTimeAttendance ? "selected" : ""}`}
+            onClick={() => handleToggleDetails("pioneerClocks")}
           >
-            Wall Clocks
+            <span className="infoSpan" style={{ marginRight: "5px" }}>
+              {showTimeAttendance ? " -" : " +"}
+            </span>{" "}
+            Pioneer Clocks
           </p>
-
-          <p
-            style={{ paddingLeft: "3px" }}
-            onClick={() => setSelectedType("Tower/Outdoor-Clocks")}
-            className={`productItems ${
-              selectedType === "Tower/Outdoor-Clocks" ? " prodActive" : ""
-            }`}
-          >
-            Tower/Outdoor Clocks
-          </p>
+          {showPioneerClocks && (
+            <div>
+              <p
+                onClick={() => setSelectedType("Wall-Clocks")}
+                className={`productItems ${
+                  selectedType === "Wall-Clocks" ? " prodActive" : ""
+                }`}
+              >
+                Wall Clocks
+              </p>
+              <p
+                onClick={() => setSelectedType("Tower/Outdoor-Clocks")}
+                className={`productItems ${
+                  selectedType === "Tower/Outdoor-Clocks" ? " prodActive" : ""
+                }`}
+              >
+                Tower Clocks
+              </p>
+            </div>
+          )}
         </section>
 
         <Container className="productContain m-0">
@@ -335,9 +349,7 @@ function ProductsPage() {
                     <h4 className="product-subtilte">{product.subtitle}</h4>
                     {/* <p>{product.description}</p> */}
                     <Link to={`/home/products/${product.type}`}>
-                      <Button  className="productbtn">
-                        See Details
-                      </Button>
+                      <Button className="productbtn">See Details</Button>
                     </Link>
                   </div>
                 </div>

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
 import "./reviewSect.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import sp1 from "./sponsorAssets/sp1.png";
 import sp2 from "./sponsorAssets/sp2.png";
 import sp3 from "./sponsorAssets/sp3.png";
@@ -10,37 +13,63 @@ import sp7 from "./sponsorAssets/sp1.png";
 import sp8 from "./sponsorAssets/sp2.png";
 
 function ReviewSect() {
-  
-  const sponsorImages = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8];
 
-  
-  const [columnClass, setColumnClass] = useState("col-3");
+  const [slidesToShow, setSlidesToShow] = useState(4);
 
-  
   useEffect(() => {
-    function handleResize() {
-      setColumnClass(window.innerWidth < 600 ? "col-6" : "col-3");
-    }
-    
+    const handleResize = () => {
+      if (window.innerWidth < 700) {
+        setSlidesToShow(3);
+      }
+      else if (window.innerWidth < 400) {
+        setSlidesToShow(1);
+      }
+       else {
+        setSlidesToShow(4);
+      }
+    };
+    handleResize();
+
     window.addEventListener("resize", handleResize);
-   
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); 
+  }, [])
+
+
+  const settings = {
+    draggable:true,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    slidesToShow: slidesToShow,
+    
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+
+  const sponsorImages = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8];
 
   return (
     <div>
       <section className="sponsorsSect">
         <h1 className="sponsors-heading">Our Esteemed Clients</h1>
 
-        <div className="row justify-content-center m-5 sponsors-grid">
+        <Slider 
+        {...settings} className="clients-slider">
           {sponsorImages.map((image, index) => (
-            <div className={columnClass  + " sponsor"} key={index}>
-              <img className="sponsor-image " src={image} alt={`Sponsor ${index + 1}`} />
+            <div key={index} className="clients-imageDiv">
+              <img
+                className="sponsor-image"
+                src={image}
+                alt={`Sponsor ${index + 1}`}
+              />
             </div>
           ))}
-        </div>
+        </Slider>
       </section>
     </div>
   );

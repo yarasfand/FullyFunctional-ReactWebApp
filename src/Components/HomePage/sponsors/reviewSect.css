@@ -6,15 +6,16 @@ body {
 }
 
 
+
 .sponsor-image{
   width: 10vw;
   height: 10vh;
 }
 
-.sponsor{
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+.clients-slider {
+  margin: 3rem;
 }
+
 
 .sponsors-heading{
   letter-spacing: 1.5px;
@@ -23,17 +24,27 @@ body {
 	margin-top: 5vh;
 }
 
-
-@media (max-width: 600px) {
-  .sponsor-image {
-    width: 25vw; 
-    max-width: none;
+@media (max-width: 800px) {
+  .sponsors-heading{
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 5vh;
   }
+  
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .sponsor-image {
-    width: 20vw; 
-    max-width: none; 
+    width: 40px; 
+    height: 50px;
   }
+
+  .sponsors-heading{
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 5vh;
+  }
+  
 }
