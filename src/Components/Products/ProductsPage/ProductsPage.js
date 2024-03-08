@@ -14,8 +14,17 @@ import product8 from "../ProducstAssets/product8.png";
 import product9 from "../ProducstAssets/product9.png";
 import product10 from "../ProducstAssets/product10.png";
 import product11 from "../ProducstAssets/product11.png";
+import product12 from "../ProducstAssets/product12.png";
+import product13 from "../ProducstAssets/product13.png";
+import product14 from "../ProducstAssets/product14.png";
+import product15 from "../ProducstAssets/product15.png";
+import product16 from "../ProducstAssets/product16.png";
+import product17 from "../ProducstAssets/product17.png";
+import product18 from "../ProducstAssets/product18.png";
+import product19 from "../ProducstAssets/product19.png";
+import product20 from "../ProducstAssets/product20.png";
+import product21 from "../ProducstAssets/product21.png";
 import { Link } from "react-router-dom";
-import Footer from "../../HomePage/footer/Footer";
 
 function ProductsPage() {
 
@@ -34,32 +43,38 @@ function ProductsPage() {
         { key: "product9", value: product9 },
         { key: "product10", value: product10 },
         { key: "product11", value: product11 },
+        { key: "product12", value: product12 },
+        { key: "product13", value: product13 },
+        { key: "product14", value: product14 },
+        { key: "product15", value: product15 },
+        { key: "product16", value: product16 },
+        { key: "product17", value: product17 },
+        { key: "product18", value: product18 },
+        { key: "product19", value: product19 },
+        { key: "product20", value: product20 },
+        { key: "product21", value: product21 },
       ];
-
-      // Check if any image is missing in local storage
-      const anyImageMissing = images.some(
-        ({ key }) => !localStorage.getItem(key)
-      );
-
-      if (anyImageMissing) {
-        // If any image is missing, save all images to local storage
-        saveImagesToLocalStorage(images);
+      
+  
+      // Filter out the images that are missing in local storage
+      const missingImages = images.filter(({ key }) => !localStorage.getItem(key));
+  
+      if (missingImages.length > 0) {
+        // If any image is missing, save only the missing images to local storage
+        saveImagesToLocalStorage(missingImages);
       } else {
-        console.log("Images are already present in local storage.");
+        console.log("All images are already present in local storage.");
       }
     } catch (error) {
-      console.error(
-        "Error checking and saving images to local storage:",
-        error
-      );
+      console.error("Error checking and saving images to local storage:", error);
     }
   }, []);
-
+  
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
     checkAndSaveImagesToLocalStorage(); // Call function to check and save images to local storage
   }, [checkAndSaveImagesToLocalStorage]);
-
+  
   // Function to save images to local storage
   const saveImagesToLocalStorage = (images) => {
     images.forEach(({ key, value }) => {
@@ -185,7 +200,111 @@ function ProductsPage() {
       type: "SDL-A7",
       image:  localStorage.getItem("product11"),
     },
+    {
+      title: "Pioneer Flower",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-flower",
+      image:  localStorage.getItem("product12"),
+    },
 
+    {
+      title: "Pioneer Chroma",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-chroma",
+      image:  localStorage.getItem("product13"),
+    },
+    {
+      title: "Pioneer Hex",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-hex",
+      image:  localStorage.getItem("product14"),
+    },
+    {
+      title: "Pioneer Crown",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-crown",
+      image:  localStorage.getItem("product15"),
+    },
+
+    {
+      title: "Pioneer Gear",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-gear",
+      image:  localStorage.getItem("product16"),
+    },
+
+    {
+      title: "Pioneer Pattern",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-pattern",
+      image:  localStorage.getItem("product17"),
+    },
+
+    {
+      title: "Pioneer Skel",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-skel",
+      image:  localStorage.getItem("product18"),
+    },
+
+    {
+      title: "Pioneer Roman",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-roman",
+      image:  localStorage.getItem("product19"),
+    },
+    {
+      title: "Pioneer Spear",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-spear",
+      image:  localStorage.getItem("product20"),
+    },
+    {
+      title: "Pioneer Astronomia",
+      subtitle: "Pioneer Clocks",
+      description:
+        "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
+      price: 60,
+      filter: "Wall-Clocks",
+      type: "pioneer-clocks-astronomia",
+      image:  localStorage.getItem("product21"),
+    },
     // Add more products as needed
   ];
 
@@ -421,7 +540,6 @@ function ProductsPage() {
           </Row>
         </Container>
       </div>
-      <Footer />
     </>
   );
 }
