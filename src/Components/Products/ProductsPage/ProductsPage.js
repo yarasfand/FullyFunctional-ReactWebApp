@@ -27,8 +27,6 @@ import product21 from "../ProducstAssets/product21.png";
 import { Link } from "react-router-dom";
 
 function ProductsPage() {
-
-  
   const checkAndSaveImagesToLocalStorage = useCallback(() => {
     try {
       const images = [
@@ -54,11 +52,12 @@ function ProductsPage() {
         { key: "product20", value: product20 },
         { key: "product21", value: product21 },
       ];
-      
-  
+
       // Filter out the images that are missing in local storage
-      const missingImages = images.filter(({ key }) => !localStorage.getItem(key));
-  
+      const missingImages = images.filter(
+        ({ key }) => !localStorage.getItem(key)
+      );
+
       if (missingImages.length > 0) {
         // If any image is missing, save only the missing images to local storage
         saveImagesToLocalStorage(missingImages);
@@ -66,15 +65,18 @@ function ProductsPage() {
         console.log("All images are already present in local storage.");
       }
     } catch (error) {
-      console.error("Error checking and saving images to local storage:", error);
+      console.error(
+        "Error checking and saving images to local storage:",
+        error
+      );
     }
   }, []);
-  
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
     checkAndSaveImagesToLocalStorage(); // Call function to check and save images to local storage
   }, [checkAndSaveImagesToLocalStorage]);
-  
+
   // Function to save images to local storage
   const saveImagesToLocalStorage = (images) => {
     images.forEach(({ key, value }) => {
@@ -92,7 +94,7 @@ function ProductsPage() {
       price: 50,
       filter: "Face-with-finger-attendance",
       type: "PT-1000",
-      image:  localStorage.getItem("product1"),
+      image: localStorage.getItem("product1"),
     },
     {
       title: "PT-1000 Mini",
@@ -102,7 +104,7 @@ function ProductsPage() {
       price: 60,
       filter: "Face-with-finger-attendance",
       type: "PT-1000-Mini",
-      image:  localStorage.getItem("product2"),
+      image: localStorage.getItem("product2"),
     },
 
     {
@@ -113,7 +115,7 @@ function ProductsPage() {
       price: 60,
       filter: "Long-Range-Face",
       type: "PT-1500-Mini",
-      image:  localStorage.getItem("product3"),
+      image: localStorage.getItem("product3"),
     },
 
     {
@@ -124,7 +126,7 @@ function ProductsPage() {
       price: 60,
       filter: "Long-Range-Face",
       type: "PT-1500",
-      image:  localStorage.getItem("product4"),
+      image: localStorage.getItem("product4"),
     },
 
     {
@@ -135,7 +137,7 @@ function ProductsPage() {
       price: 60,
       filter: "Long-Range-Face",
       type: "PT-10000",
-      image:  localStorage.getItem("product5"),
+      image: localStorage.getItem("product5"),
     },
 
     {
@@ -146,7 +148,7 @@ function ProductsPage() {
       price: 60,
       filter: "FingerprinT-Pro",
       type: "PT-5000-Pro",
-      image:  localStorage.getItem("product6"),
+      image: localStorage.getItem("product6"),
     },
     {
       title: "PT-20000 Pro",
@@ -156,7 +158,7 @@ function ProductsPage() {
       price: 60,
       filter: "FingerprinT-Pro",
       type: "PT-20000-Pro",
-      image:  localStorage.getItem("product7"),
+      image: localStorage.getItem("product7"),
     },
 
     {
@@ -167,7 +169,7 @@ function ProductsPage() {
       price: 60,
       filter: "Face&FingerPro",
       type: "PT-600",
-      image:  localStorage.getItem("product8"),
+      image: localStorage.getItem("product8"),
     },
     {
       title: "Smart Camera c7",
@@ -177,7 +179,7 @@ function ProductsPage() {
       price: 60,
       filter: "Smart-Camera",
       type: "Smart-Camera-c7",
-      image:  localStorage.getItem("product9"),
+      image: localStorage.getItem("product9"),
     },
     {
       title: "SDL 700",
@@ -187,7 +189,7 @@ function ProductsPage() {
       price: 60,
       filter: "Smart-Door-Locks",
       type: "SDL-700",
-      image:  localStorage.getItem("product10"),
+      image: localStorage.getItem("product10"),
     },
 
     {
@@ -198,7 +200,7 @@ function ProductsPage() {
       price: 60,
       filter: "Smart-Door-Locks",
       type: "SDL-A7",
-      image:  localStorage.getItem("product11"),
+      image: localStorage.getItem("product11"),
     },
     {
       title: "Pioneer Flower",
@@ -208,7 +210,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-flower",
-      image:  localStorage.getItem("product12"),
+      image: localStorage.getItem("product12"),
     },
 
     {
@@ -219,7 +221,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-chroma",
-      image:  localStorage.getItem("product13"),
+      image: localStorage.getItem("product13"),
     },
     {
       title: "Pioneer Hex",
@@ -229,7 +231,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-hex",
-      image:  localStorage.getItem("product14"),
+      image: localStorage.getItem("product14"),
     },
     {
       title: "Pioneer Crown",
@@ -239,7 +241,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-crown",
-      image:  localStorage.getItem("product15"),
+      image: localStorage.getItem("product15"),
     },
 
     {
@@ -250,7 +252,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-gear",
-      image:  localStorage.getItem("product16"),
+      image: localStorage.getItem("product16"),
     },
 
     {
@@ -261,7 +263,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-pattern",
-      image:  localStorage.getItem("product17"),
+      image: localStorage.getItem("product17"),
     },
 
     {
@@ -272,7 +274,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-skel",
-      image:  localStorage.getItem("product18"),
+      image: localStorage.getItem("product18"),
     },
 
     {
@@ -283,7 +285,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-roman",
-      image:  localStorage.getItem("product19"),
+      image: localStorage.getItem("product19"),
     },
     {
       title: "Pioneer Spear",
@@ -293,7 +295,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-spear",
-      image:  localStorage.getItem("product20"),
+      image: localStorage.getItem("product20"),
     },
     {
       title: "Pioneer Astronomia",
@@ -303,7 +305,7 @@ function ProductsPage() {
       price: 60,
       filter: "Wall-Clocks",
       type: "pioneer-clocks-astronomia",
-      image:  localStorage.getItem("product21"),
+      image: localStorage.getItem("product21"),
     },
     // Add more products as needed
   ];
@@ -355,14 +357,14 @@ function ProductsPage() {
           <p
             onClick={() => handleToggleDetails("all")} // Toggle to show all products
             className={`productItems ${
-              selectedType === null ? "prodActive" : ""
+              selectedType === null ? "prodActive selected" : ""
             }`}
           >
             All
           </p>
 
           <p
-            className={`timelineItem ${showAccessControl ? "selected" : ""}`}
+            className={`timelineItem ${showAccessControl ? " selected" : ""}`}
             onClick={() => handleToggleDetails("accessControl")}
           >
             <span className="infoSpan" style={{ paddingRight: "5px" }}>
@@ -412,7 +414,7 @@ function ProductsPage() {
           )}
 
           <p
-            className={`timelineItem ${showTimeAttendance ? "selected" : ""}`}
+            className={`timelineItem ${showTimeAttendance ? " selected" : ""}`}
             onClick={() => handleToggleDetails("timeAttendance")}
           >
             <span className="infoSpan" style={{ marginRight: "5px" }}>
@@ -438,7 +440,7 @@ function ProductsPage() {
           )}
 
           <p
-            className={`timelineItem ${showSmartDevices ? "selected" : ""}`}
+            className={`timelineItem ${showSmartDevices ? " selected" : ""}`}
             onClick={() => handleToggleDetails("SmartDevices")}
           >
             <span className="infoSpan" style={{ marginRight: "5px" }}>
@@ -482,7 +484,7 @@ function ProductsPage() {
           </p> */}
 
           <p
-            className={`timelineItem ${showTimeAttendance ? "selected" : ""}`}
+            className={`timelineItem ${showPioneerClocks ? " selected" : ""}`}
             onClick={() => handleToggleDetails("pioneerClocks")}
           >
             <span className="infoSpan" style={{ marginRight: "5px" }}>

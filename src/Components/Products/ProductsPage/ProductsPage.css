@@ -87,6 +87,10 @@
   outline: none;
 }
 
+.selected{
+  font-weight: bold;
+}
+
 
 .timelineItem {
   cursor: pointer;

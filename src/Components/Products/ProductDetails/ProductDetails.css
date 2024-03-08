@@ -131,3 +131,19 @@
 .image-gallery-thumbnails .image-gallery-thumbnails-container {
   justify-content: flex-start;
 }
+
+.clock-prod-heading{
+  font-weight: 600; 
+  color: rgba(0, 0, 0, 0.905);
+}
+
+.clock-prod-subheading{
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.786);
+}
+
+.clock-prod-descript{
+  color: rgb(85, 85, 85);
+}

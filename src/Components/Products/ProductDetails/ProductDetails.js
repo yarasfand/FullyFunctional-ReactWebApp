@@ -835,15 +835,16 @@ function ProductDetails() {
               {/* <p className="main-text">{selectedProduct.description}</p> */}
 
               <div className="main-text">
+                
                 {selectedProduct.clockfeatures &&
                   selectedProduct.clockfeatures.map((feature, index) => (
                     <div key={index}>
                       <br/>
-                      <h5>
-                        {feature.title} <span>{feature.subtitle}</span>
+                      <h5 className="clock-prod-heading">
+                        {feature.title} <span className="clock-prod-subheading">{feature.subtitle}</span>
                       </h5>
                      
-                      <p>{feature.description}</p>
+                      <p className="clock-prod-descript">{feature.description}</p>
                     </div>
                   ))}
                 {selectedProduct.features && (
