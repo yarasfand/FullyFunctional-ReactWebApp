@@ -203,7 +203,7 @@ function ProductsPage() {
       image: localStorage.getItem("product11"),
     },
     {
-      title: "Pioneer Flower",
+      title: "Flower",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -214,7 +214,7 @@ function ProductsPage() {
     },
 
     {
-      title: "Pioneer Chroma",
+      title: "Chroma",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -224,7 +224,7 @@ function ProductsPage() {
       image: localStorage.getItem("product13"),
     },
     {
-      title: "Pioneer Hex",
+      title: "Hex",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -234,7 +234,7 @@ function ProductsPage() {
       image: localStorage.getItem("product14"),
     },
     {
-      title: "Pioneer Crown",
+      title: "Crown",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -245,7 +245,7 @@ function ProductsPage() {
     },
 
     {
-      title: "Pioneer Gear",
+      title: "Gear",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -256,7 +256,7 @@ function ProductsPage() {
     },
 
     {
-      title: "Pioneer Pattern",
+      title: "Pattern",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -267,7 +267,7 @@ function ProductsPage() {
     },
 
     {
-      title: "Pioneer Skel",
+      title: "Skel",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -278,7 +278,7 @@ function ProductsPage() {
     },
 
     {
-      title: "Pioneer Roman",
+      title: "Roman",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -288,7 +288,7 @@ function ProductsPage() {
       image: localStorage.getItem("product19"),
     },
     {
-      title: "Pioneer Spear",
+      title: "Spear",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",
@@ -298,7 +298,7 @@ function ProductsPage() {
       image: localStorage.getItem("product20"),
     },
     {
-      title: "Pioneer Astronomia",
+      title: "Astronomia",
       subtitle: "Pioneer Clocks",
       description:
         "Say goodbye to traditional keys and passwords. Our biometric products utilize state-of-the-art fingerprint recognition technology, ensuring a secure and personalized access experience.",

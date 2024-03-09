@@ -392,13 +392,13 @@ function ProductDetails() {
     {
       title: "Pioneer Flower",
       description:
-            "Step into the world of timeless beauty with the Pioneer Flower Wall Clock, an embodiment of elegance and precision. Dive into the unique features that distinguish this exquisite timepiece.",
-     
+        "Step into the world of timeless beauty with the Pioneer Flower Wall Clock, an embodiment of elegance and precision. Dive into the unique features that distinguish this exquisite timepiece.",
+
       specifications: {
-        "MATERIAL": "Metal",
-        "SIZE":  "15 x 15 Inches",
-        "TYPE": "Wall Clock",
-        "COLOR": "Powder Coated Gold",
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated Gold",
       },
       price: 60,
       type: "pioneer-clocks-flower",
@@ -406,286 +406,122 @@ function ProductDetails() {
     },
     {
       title: "Pioneer Chroma",
-      clockfeatures: [
-        {
-          description:
-            "Unveil the modern elegance of the Pioneer Chroma Wall Clock, a perfect synthesis of style and functionality. Dive into the details that make this timepiece stand out.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Chroma Wall Clock exudes durability and a sophisticated aesthetic, ensuring it stands the test of time.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With ideal dimensions of 15 x 15 inches, the Pioneer Chroma Wall Clock becomes a striking centerpiece that captures attention and adds a modern touch to any space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its timekeeping function, the Pioneer Chroma serves as a statement piece, seamlessly integrating into your decor and enhancing the visual appeal of your surroundings.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated White",
-          description:
-            "Revel in the pristine beauty of the Powder Coated White finish, creating a crisp and clean look that effortlessly complements a variety of interior styles.",
-        },
-        {
-          description:
-            "Experience the contemporary charm and precision craftsmanship that define the Pioneer Chroma Wall Clock. Elevate your living space with this stylish timepiece that transcends conventional decor, embodying a perfect blend of form and function.",
-        },
-      ],
+      description:
+        "Unveil the modern elegance of the Pioneer Chroma Wall Clock, a perfect synthesis of style and functionality. Dive into the details that make this timepiece stand out.",
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated White",
+      },
       price: 60,
       type: "pioneer-clocks-chroma",
       images: [{ original: localStorage.getItem("product13") }],
     },
     {
       title: "Pioneer Hex",
-      clockfeatures: [
-        {
-          description:
-            "Embrace contemporary elegance with the Pioneer Hex Wall Clock, a fusion of modern design and functionality. Explore the distinctive features that set this timepiece apart.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Hex Wall Clock exudes durability and modern sophistication, ensuring a stylish addition to your space.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With dimensions measuring 15 x 15 inches, the Pioneer Pioneer Wall Clock becomes a striking centerpiece, adding a touch of geometric flair to your living space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its primary function, the Pioneer Hex is a statement piece, seamlessly integrating into your decor to elevate the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated White",
-          description:
-            " Immerse yourself in the clean and minimalist charm of the Powder Coated White finish, creating a timeless look that complements various interior styles.",
-        },
-        {
-          description:
-            "Experience the meticulous craftsmanship and contemporary design that define the Pioneer Hex Wall Clock. Elevate your living space with this geometric-inspired timepiece, where form and function harmonize seamlessly.",
-        },
-      ],
+      description:
+        "Embrace contemporary elegance with the Pioneer Hex Wall Clock, a fusion of modern design and functionality. Explore the distinctive features that set this timepiece apart.Experience the meticulous craftsmanship and contemporary design that define the Pioneer Hex Wall Clock. Elevate your living space with this geometric-inspired timepiece, where form and function harmonize seamlessly.",
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated White",
+      },
       price: 60,
       type: "pioneer-clocks-hex",
       images: [{ original: localStorage.getItem("product14") }],
     },
     {
       title: "Pioneer Crown",
-      clockfeatures: [
-        {
-          description:
-            "Unveil the regal charm of the Pioneer Crown Wall Clock, a seamless blend of elegance and functionality. Delve into the distinctive features that set this timepiece apart.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from premium metal, the Pioneer Crown Wall Clock boasts durability and a refined aesthetic, ensuring a timeless addition to your decor.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With dimensions measuring 15 x 15 inches, the Pioneer Crown Wall Clock becomes a focal point, adding a touch of sophistication to any space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its primary function, the Pioneer Crown serves as a statement piece, seamlessly integrating into your decor to enhance the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated White",
-          description:
-            " Revel in the pristine allure of the Powder Coated White finish, creating a clean and timeless look that complements various interior styles with effortless grace.",
-        },
-        {
-          description:
-            "Experience the luxurious design and meticulous craftsmanship that define the Pioneer Crown Wall Clock. Elevate your living space with this regal timepiece, symbolizing a perfect fusion of style and substance.",
-        },
-      ],
+      description:
+        "Unveil the regal charm of the Pioneer Crown Wall Clock, a seamless blend of elegance and functionality. Delve into the distinctive features that set this timepiece apart. Experience the luxurious design and meticulous craftsmanship that define the Pioneer Crown Wall Clock. Elevate your living space with this regal timepiece, symbolizing a perfect fusion of style and substance.",
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated White",
+      },
+
       price: 60,
       type: "pioneer-clocks-crown",
       images: [{ original: localStorage.getItem("product15") }],
     },
     {
       title: "Pioneer Gear",
-      clockfeatures: [
-        {
-          description:
-            "Step into the world of industrial elegance with the Pioneer Gear Wall Clock, where functionality meets distinctive design. Explore the unique features that make this timepiece a standout addition.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Gear Wall Clock embodies durability and an industrial aesthetic, adding a touch of rugged sophistication to your space.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With dimensions of 15 x 15 inches, the Pioneer Gear Wall Clock becomes a focal point, infusing an industrial vibe into your living space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its utilitarian function, the Pioneer Gear is a statement piece, seamlessly integrating into your decor to enhance the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated Black",
-          description:
-            "Immerse yourself in the sleek and bold aesthetic of the Powder Coated Black finish, adding a touch of modernity to your interior.",
-        },
-        {
-          description:
-            "Experience the meticulous craftsmanship and distinctive design that define the Pioneer Gear Wall Clock. Transform your living space with this industrial-inspired timepiece, where form and function merge seamlessly.",
-        },
-      ],
+      description:
+        "Step into the world of industrial elegance with the Pioneer Gear Wall Clock, where functionality meets distinctive design. Explore the unique features that make this timepiece a standout addition. Experience the meticulous craftsmanship and distinctive design that define the Pioneer Gear Wall Clock. Transform your living space with this industrial-inspired timepiece, where form and function merge seamlessly.",
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated Black",
+      },
+
       price: 60,
       type: "pioneer-clocks-gear",
       images: [{ original: localStorage.getItem("product16") }],
     },
     {
       title: "Pioneer Pattern",
-      clockfeatures: [
-        {
-          description:
-            "Step into a world of sophisticated design with the Pioneer Pattern Wall Clock, where intricate details meet modern aesthetics. Explore the defining features of this exquisite timepiece.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Pattern Wall Clock embodies durability and a contemporar",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With dimensions of 15 x 15 inches, the Pioneer Pattern Wall Clock becomes a captivating focal point, adding a touch of artistic flair to your living space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its utilitarian function, the Pioneer Pattern is a statement piece, seamlessly integrating into your decor to enhance the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated Black",
-          description:
-            "Immerse yourself in the sleek and bold aesthetic of the Powder Coated Black finish, adding a touch of modernity to your interior.",
-        },
-        {
-          description:
-            "Experience the meticulous craftsmanship and contemporary design that define the Pioneer Pattern Wall Clock. Elevate your living space with this stylish timepiece, where form and function merge seamlessly.",
-        },
-      ],
+      description:
+        "Step into a world of sophisticated design with the Pioneer Pattern Wall Clock, where intricate details meet modern aesthetics. Explore the defining features of this exquisite timepiece. Experience the meticulous craftsmanship and contemporary design that define the Pioneer Pattern Wall Clock. Elevate your living space with this stylish timepiece, where form and function merge seamlessly.",
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated Black",
+      },
+
       price: 60,
       type: "pioneer-clocks-pattern",
       images: [{ original: localStorage.getItem("product17") }],
     },
     {
       title: "Pioneer Skel",
-      clockfeatures: [
-        {
-          description:
-            "Immerse yourself in contemporary design with the Pioneer Skel Wall Clock, where modern aesthetics meet precision craftsmanship. Explore the defining features of this exceptional timepiece.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Skel Wall Clock embodies durability and a contemporary aesthetic, ensuring a striking addition to your space.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With dimensions of 15 x 15 inches, the Pioneer Skel Wall Clock becomes a captivating focal point, adding a touch of modern flair to your living space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its utilitarian function, the Pioneer Skel is a statement piece, seamlessly integrating into your decor to enhance the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated White",
-          description:
-            "Immerse yourself in the clean and minimalist charm of the Powder Coated White finish, creating a timeless look that complements various interior styles.",
-        },
-        {
-          description:
-            "Experience the meticulous craftsmanship and contemporary design that define the Pioneer Skel Wall Clock. Elevate your living space with this stylish and sleek timepiece, where form and function merge seamlessly.",
-        },
-      ],
+      description:
+        "Immerse yourself in contemporary design with the Pioneer Skel Wall Clock, where modern aesthetics meet precision craftsmanship. Explore the defining features of this exceptional timepiece. Experience the meticulous craftsmanship and contemporary design that define the Pioneer Skel Wall Clock. Elevate your living space with this stylish and sleek timepiece, where form and function merge seamlessly.",
+
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated White",
+      },
+
       price: 60,
       type: "pioneer-clocks-skel",
       images: [{ original: localStorage.getItem("product18") }],
     },
+
     {
       title: "Pioneer Roman",
-      clockfeatures: [
-        {
-          description:
-            "Immerse yourself in timeless elegance with the Pioneer Roman Wall Clock, where classic design meets modern craftsmanship. Explore the distinctive features that make this timepiece a distinguished addition.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Roman Wall Clock embodies durability and a classic aesthetic, ensuring a lasting impression in your space.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With dimensions of 15 x 15 inches, the Pioneer Roman Wall Clock becomes a captivating centerpiece, adding a touch of traditional charm to your living space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its utilitarian function, the Pioneer Roman is a statement piece, seamlessly integrating into your decor to enhance the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated Blue",
-          description:
-            "Immerse yourself in the serene and timeless aesthetic of the Powder Coated Blue finish, adding a touch of sophistication to your interior.",
-        },
-        {
-          description:
-            "Experience the meticulous craftsmanship and timeless design that define the Pioneer Roman Wall Clock. Elevate your living space with this stylish and classic timepiece, where form and function harmonize seamlessly.",
-        },
-      ],
+      description:
+        "Immerse yourself in timeless elegance with the Pioneer Roman Wall Clock, where classic design meets modern craftsmanship. Explore the distinctive features that make this timepiece a distinguished addition. Experience the meticulous craftsmanship and timeless design that define the Pioneer Roman Wall Clock. Elevate your living space with this stylish and classic timepiece, where form and function harmonize seamlessly.",
+
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated Blue",
+      },
       price: 60,
       type: "pioneer-clocks-roman",
       images: [{ original: localStorage.getItem("product19") }],
     },
     {
       title: "Pioneer Spear",
+      description:
+        "Immerse yourself in the contemporary elegance of the Pioneer Spear Wall Clock, where sleek design meets precision craftsmanship. Explore the distinctive features that make this timepiece a standout addition. Experience the meticulous craftsmanship and contemporary design that define the Pioneer Spear Wall Clock. Elevate your living space with this stylish and bold timepiece, where form and function harmonize seamlessly.",
+
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated Blue",
+      },
+
+      /*
       clockfeatures: [
         {
           description:
@@ -719,18 +555,28 @@ function ProductDetails() {
           description:
             "Experience the meticulous craftsmanship and contemporary design that define the Pioneer Spear Wall Clock. Elevate your living space with this stylish and bold timepiece, where form and function harmonize seamlessly.",
         },
-      ],
+      ], */
       price: 60,
       type: "pioneer-clocks-spear",
       images: [{ original: localStorage.getItem("product20") }],
     },
     {
       title: "Pioneer Astronomia",
+      description:
+        "Unveil the charm of the Pioneer Astronomia Wall Clock, a blend of functionality and aesthetic appeal, highlighted by its exquisite details. Experience the meticulous craftsmanship and attention to detail that define the Pioneer Astronomia Wall Clock. Elevate your living space with this exceptional timepiece, where form meets function in perfect harmony.",
+
+      specifications: {
+        Material: "Metal",
+        Size: "15 x 15 Inches",
+        Type: "Wall Clock",
+        Color: "Powder Coated Gold",
+      },
+
+      /*
+
       clockfeatures: [
         {
-          description:
-            "Unveil the charm of the Pioneer Astronomia Wall Clock, a blend of functionality and aesthetic appeal, highlighted by its exquisite details:",
-        },
+          description: "Unveil the charm of the Pioneer Astronomia Wall Clock, a blend of functionality and aesthetic appeal, highlighted by its exquisite details. " },
         {
           title: "MATERIAL: ",
           subtitle: "Metal",
@@ -760,6 +606,9 @@ function ProductDetails() {
             "Experience the meticulous craftsmanship and attention to detail that define the Pioneer Astronomia Wall Clock. Elevate your living space with this exceptional timepiece, where form meets function in perfect harmony.",
         },
       ],
+
+      */
+
       price: 60,
       type: "pioneer-clocks-astronomia",
       images: [{ original: localStorage.getItem("product21") }],
@@ -811,20 +660,24 @@ function ProductDetails() {
 
               <div className="main-text">
                 <p>{selectedProduct.description}</p>
-                
-                {selectedProduct.clockfeatures &&
+
+                {/* {selectedProduct.clockfeatures &&
                   selectedProduct.clockfeatures.map((feature, index) => (
                     <div key={index}>
-                      <br/>
+                      <br />
                       <h5 className="clock-prod-heading">
-                        {feature.title} <span className="clock-prod-subheading">{feature.subtitle}</span>
+                        {feature.title}{" "}
+                        <span className="clock-prod-subheading">
+                          {feature.subtitle}
+                        </span>
                       </h5>
-                     
-                      <p className="clock-prod-descript">{feature.description}</p>
-                    </div>
-                  ))}
 
-                  
+                      <p className="clock-prod-descript">
+                        {feature.description}
+                      </p>
+                    </div>
+                  ))} */}
+
                 {selectedProduct.features && (
                   <FeatureList features={selectedProduct.features} />
                 )}
