@@ -28,13 +28,13 @@ function AboveNavbar() {
         <p className="topNavText">Pioneer Time System.</p>
         <ul className="topNav-list">
           <li>
-            <i className="bi bi-hourglass-split"></i> Mon to Fri 08:00 - 16:00
+            <i className="bi bi-hourglass-split"></i> Mon to Sat 10:00 - 18:00
           </li>
           <li>
-          <i className="bi bi-telephone"></i>  +(92) 300 9449446
+          <i className="bi bi-telephone"></i>  +(042)  37725777
           </li>
           <li>
-            <i className="bi bi-telephone"></i>  +(92) 304 4976411
+            <i className="bi bi-telephone"></i>  +(92) 3044976411
           </li>
         </ul>
       </div>

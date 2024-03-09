@@ -391,40 +391,15 @@ function ProductDetails() {
 
     {
       title: "Pioneer Flower",
-      clockfeatures: [
-        {
-          description:
+      description:
             "Step into the world of timeless beauty with the Pioneer Flower Wall Clock, an embodiment of elegance and precision. Dive into the unique features that distinguish this exquisite timepiece.",
-        },
-        {
-          title: "MATERIAL: ",
-          subtitle: "Metal",
-          description:
-            "Crafted from high-quality metal, the Pioneer Flower Wall Clock combines durability with a refined aesthetic, ensuring it stands as a symbol of timeless sophistication.",
-        },
-        {
-          title: "SIZE: ",
-          subtitle: " 15 x 15 Inches",
-          description:
-            "With perfect dimensions of 15 x 15 inches, the Pioneer Flower Wall Clock becomes a captivating centerpiece, adding a touch of grace to any living space.",
-        },
-        {
-          title: "TYPE: ",
-          subtitle: "Wall Clock",
-          description:
-            "Beyond its utilitarian function, the Pioneer Flower is a statement piece, seamlessly integrating into your decor to elevate the overall visual appeal.",
-        },
-        {
-          title: "COLOR: ",
-          subtitle: "Powder Coated Gold",
-          description:
-            "Immerse yourself in the opulence of the Powder Coated Gold finish, adding warmth and luxury to your surroundings. This elegant color choice complements a variety of interior styles with timeless charm.",
-        },
-        {
-          description:
-            "Experience the intricate design and meticulous craftsmanship that define the Pioneer Flower Wall Clock. Transform your living space with this floral-inspired timepiece, where beauty meets functionality in perfect harmony.",
-        },
-      ],
+     
+      specifications: {
+        "MATERIAL": "Metal",
+        "SIZE":  "15 x 15 Inches",
+        "TYPE": "Wall Clock",
+        "COLOR": "Powder Coated Gold",
+      },
       price: 60,
       type: "pioneer-clocks-flower",
       images: [{ original: localStorage.getItem("product12") }],
@@ -835,6 +810,7 @@ function ProductDetails() {
               {/* <p className="main-text">{selectedProduct.description}</p> */}
 
               <div className="main-text">
+                <p>{selectedProduct.description}</p>
                 
                 {selectedProduct.clockfeatures &&
                   selectedProduct.clockfeatures.map((feature, index) => (
@@ -847,6 +823,8 @@ function ProductDetails() {
                       <p className="clock-prod-descript">{feature.description}</p>
                     </div>
                   ))}
+
+                  
                 {selectedProduct.features && (
                   <FeatureList features={selectedProduct.features} />
                 )}

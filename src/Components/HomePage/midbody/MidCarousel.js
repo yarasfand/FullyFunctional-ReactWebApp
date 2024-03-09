@@ -2,14 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./midCarousel.css";
 
-function generateLoremIpsum() {
-  return (
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-    "Nulla vel justo nec quam dictum fringilla. Nullam non purus in tortor iaculis " +
-    "gravida. Sed id justo ac quam consequat bibendum. Sed vehicula elit ut erat gravida " +
-    "efficitur. Morbi lacinia odio in erat facilisis, non volutpat est tincidunt. "
-  );
-}
+
 
 function MidCarousel() {
   const responsive = {
@@ -119,47 +112,7 @@ function MidCarousel() {
             <h3 className="cardheading">Great quality</h3>
             <p>We Have Great Quality Products</p>
           </div>
-          <div
-            className="item"
-            style={{
-              height: "400px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <h1 className="cardemoji">
-              <i class="bi bi-gear"></i>
-            </h1>
-            <br />
-            <h3 className="cardheading">Support</h3>
-            <p>Our Technical Team Available For Help</p>
-          </div>
-
-          <div
-            className="item"
-            style={{
-              height: "400px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <h1 className="cardemoji">
-              <i class="bi bi-star"></i>
-            </h1>
-            <br />
-            <h3 className="cardheading">Great quality</h3>
-            <p>{generateLoremIpsum()}</p>
-          </div>
-          <div className="item" style={{ height: "400px" }}>
-            Carousel Item 5
-          </div>
-          <div className="item" style={{ height: "400px" }}>
-            Carousel Item 6
-          </div>
+         
         </Carousel>
       </div>
 

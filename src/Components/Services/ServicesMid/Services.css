@@ -30,7 +30,9 @@
   display: block;
 }
 
-.service-features > p {
+
+.service-features  p {
+  text-align: left;
   margin: 0;
   line-height: 1.6;
 }
@@ -53,28 +55,13 @@
   counter-increment: list;
   /*Control Box Size From Max Width*/
 
-  margin: 2rem auto;
   padding: 2rem 1rem 1rem;
-  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
   border-radius: 0.25rem;
   overflow: hidden;
   background-color: white;
 }
 
-.service-features > li::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    to right,
-    var(--c1) var(--stop),
-    var(--c2) var(--stop)
-  );
-}
+
 
 .service-item-feature {
   display: flex;
@@ -100,8 +87,8 @@
 
 @media (min-width: 40em) {
   .service-features > li {
-    margin: 3rem auto;
-    padding: 3rem 2rem 2rem;
+    margin: 1rem auto;
+    padding: 1rem 1rem 1rem;
   }
 
   .service-item-feature {
@@ -116,10 +103,15 @@
 
 @media (max-width: 370px) {
   .service-item-feature {
+    flex-direction: column;
     font-size: 18px;
-    margin: 0;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
   }
-
+  .service-item-feature::before{
+    margin: 1rem;
+  }
   .service-info-heading {
     font-weight: 700;
     font-size: 1.2rem;
