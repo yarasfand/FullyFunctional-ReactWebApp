@@ -20,10 +20,7 @@ function UpperPart() {
        
         Pioneer Time System helps Hundreds of businesses around the country save time and money every day through more accurate time and attendance tracking and more efficient payroll processing. If you have any questions about our products, or comments about how we can help your business become more profitable, we would love to hear from you!
         </p>
-        <button className="upperPartbtn">
-          <span className="upperPartbtn-label-down">READ MORE</span>
-          <span className="upperPartbtn-label-down">READ MORE</span>
-        </button>
+        
       </div>
       <div className="upperPartImageContainer">
         <img className="upperPartImage" src={sideImage} alt="This is pic" />

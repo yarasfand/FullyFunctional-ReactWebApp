@@ -40,7 +40,7 @@ footer p {
 }
 .footer_ul_amrc li:hover,
 .footer_ul_amrc li a:hover {
-  color: #e26142;
+  color: var(--primary-color);
   text-decoration: none;
 }
 .fleft {

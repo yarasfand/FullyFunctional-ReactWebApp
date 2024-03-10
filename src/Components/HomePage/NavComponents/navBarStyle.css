@@ -6,6 +6,10 @@
   color: rgb(92, 91, 91) !important;
 }
 
+.navbar-light .navbar-nav .nav-link{
+  text-align: center;
+}
+
 .navContainer {
   background-color: #f9f8f8;
   padding-top: 1.5em;
@@ -19,12 +23,11 @@
 
 .navLogo{
   display: flex;
-  justify-content: center;
 }
 
 .navLogo img {
   align-items: baseline;
-  float: left;
+  width: 10rem;
 }
 
 .navItems {
@@ -58,7 +61,7 @@
 
 .navmenuli:hover,
 .navItems ul li a:hover {
-  color: #e26142;
+  color: var(--primary-color);
 }
 
 .navmenuli:active,

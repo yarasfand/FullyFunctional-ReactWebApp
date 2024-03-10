@@ -11,7 +11,7 @@ function AboutUs() {
   }, []);
 
   return (
-    <div>
+    <div id="about-us">
       <Overview />
       <TimeLine/>
       <Footer/>

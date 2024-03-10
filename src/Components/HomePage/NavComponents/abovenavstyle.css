@@ -11,8 +11,8 @@
 }
 
 .topNav {
-  background: #e26142;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color);
   margin: 0 65px;
   padding: 0 20px;
   position: relative;
@@ -26,7 +26,7 @@
   width: 35px;
   height: 79px;
   content: "";
-  background: #de856f;
+  background: var(--secondary-color);
   transform: rotate(-40deg);
 }
 
@@ -37,7 +37,7 @@
   width: 35px;
   height: 79px;
   content: "";
-  background: #e26142;
+  background: var(--primary-color);
   -ms-transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
@@ -54,7 +54,7 @@
 
 .topNavText {
   float: left;
-  background: #de856f;
+  background: var(--secondary-color);
   font-size: 17px;
   padding: 11.5px 30px;
   margin: 0 0 0 -20px;
@@ -69,7 +69,7 @@
   width: 35px;
   height: 79px;
   content: "";
-  background: #de856f;
+  background: var(--secondary-color);
   -ms-transform: rotate(40deg);
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);

@@ -59,7 +59,7 @@ function HeroSlider() {
         draggable
         touch
         keyboard={true}
-        fade={true}
+        slide={true}
       >
         <Carousel.Item>
           <img

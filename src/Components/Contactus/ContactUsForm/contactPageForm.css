@@ -21,7 +21,7 @@ h2 {
 .left-container {
   flex: 1;
   height: 480px;
-  background-color: #e26142;
+  background-color: var(--secondary-color);
 }
 
 .right-container {
@@ -80,14 +80,14 @@ h2 {
 
 .contactUsInput:focus,
 .contactUsTextArea:focus {
-  outline: 1px solid #e26142;
-  color: #d63912;
+  outline: 1px solid var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .contactUsSubmit {
   border-radius: 20px;
-  border: 1px solid #d63912;
-  background-color: #e26142;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;

@@ -38,11 +38,20 @@ function Footer() {
           <div className="col-sm-4 col-md-4 col-6 mx-auto text-center">
             <h5 className="headin5_amrc col_white_amrc pt2">Quick Links</h5>
             <ul className="footer_ul_amrc no-bullets">
+            <li>
+                <a href="#home">Home</a>
+              </li>
               <li>
                 <a href="#products">Products</a>
               </li>
               <li>
                 <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#about-us">About us</a>
+              </li>
+              <li>
+                <a href="#contact-us">Contact us</a>
               </li>
             </ul>
           </div>

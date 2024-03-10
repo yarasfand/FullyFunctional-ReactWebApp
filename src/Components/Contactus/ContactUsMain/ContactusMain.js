@@ -10,7 +10,7 @@ function ContactUsMain() {
   }, []);
   
     return( 
-  <div>
+  <div id="contact-us">
     <ContactUsPageForm/>
     <ContactUsLocation/>
     <Footer/>

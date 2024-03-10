@@ -4,7 +4,7 @@ import React from "react";
 function Specifications({ specifications }) {
   return (
     <div className="specifications">
-      <h4 style={{ borderBottom: "4px solid orange", paddingBottom: "5px" }}>Specifications:</h4>
+      <h4 style={{ borderBottom: "4px solid var(--primary-color)", paddingBottom: "5px" }}>Specifications:</h4>
       <table style={{ borderSpacing: "0 10px" , width: "100%"}}>
         <tbody>
           {Object.entries(specifications).map(([key, value], index) => (

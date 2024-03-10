@@ -8,7 +8,7 @@
   align-items: center;
   border-radius: 15px;
   justify-content: center;
-  border-top: 14px solid #e26142;
+  border-top: 14px solid var(--primary-color);
 
 }
 
@@ -54,8 +54,8 @@
 }
 
 .custom-dot.active {
-  background-color: #e26142;
-  border: #e26142;
+  background-color: var(--primary-color);
+  border: var(--primary-color);
 }
 
 .custom-dot.notactive {
@@ -64,12 +64,12 @@
 
 .cardheading {
   font-size: xx-large;
-  color: #e26142;
+  color: var(--primary-color);
 }
 
 .cardemoji {
   font-size: 3.5em;
-  color: #e26142;
+  color: var(--primary-color);
 }
 
 .midCarouselHeadindiv {
@@ -84,13 +84,16 @@
   text-align: center;
 }
 
+.card-p{
+  color: var(--secondary-color);
+}
 .belowmidCarousel {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 2em;
-  background-color: #e36f52;
+  background-color: var(--secondary-color);
 }
 
 .belowmidCarousel p {
@@ -148,8 +151,8 @@ button:hover #money {
   position: relative;
   border-radius: 8px;
   letter-spacing: 0.7px;
-  background-color: #e45f3e;
-  border: 4px solid #e55633;
+  background-color: var(--secondary-color);
+  border: 4px solid var(--primary-color);
   color: #fff;
   font-size: 17px;
   font-family: "Lato", sans-serif;

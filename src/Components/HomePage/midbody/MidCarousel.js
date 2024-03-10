@@ -74,7 +74,7 @@ function MidCarousel() {
             </h1>
             <br />
             <h3 className="cardheading">Monitoring Office</h3>
-            <p>Monitor Your office with Bio-metric Systems</p>
+            <p className="card-p">Monitor Your office with Bio-metric Systems</p>
           </div>
 
           <div
@@ -92,7 +92,7 @@ function MidCarousel() {
             </h1>
             <br />
             <h3 className="cardheading">Support</h3>
-            <p>Our Technical Team Available For Help</p>
+            <p className="card-p">Our Technical Team Available For Help</p>
           </div>
 
           <div
@@ -110,7 +110,7 @@ function MidCarousel() {
             </h1>
             <br />
             <h3 className="cardheading">Great quality</h3>
-            <p>We Have Great Quality Products</p>
+            <p className="card-p">We Have Great Quality Products</p>
           </div>
          
         </Carousel>

@@ -1,5 +1,5 @@
 .contactFormDiv {
-  background: linear-gradient(to bottom right, #f1886e, #dc5331);
+  background: linear-gradient(to bottom right, var(--secondary-color), var(--primary-color));
   width: 100% !important;
   padding: 2em;
   margin: 0;
@@ -10,24 +10,24 @@
 }
 .contactFormDiv h1,
 .contactFormDiv h3 {
-  color: #fff;
+  color: var(--text-color);
   font-family: sans-serif;
 }
 
 .contactFormDiv a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   display: inline-block;
 }
 
 .contactFormDiv a:hover {
-  color: #6d1702;
+  color: var(--primary-color);
 }
 
 .contactFormDiv p,
 .contactFormDiv strong {
   word-break: break-word;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .ovhidden {
@@ -38,7 +38,7 @@
   padding: 1.375rem 0.75rem;
   line-height: 1.5;
   resize: none;
-  color: #6d1702;
+  color: var(--primary-color);
   background-color: #fff;
   border-radius: 0 !important;
 }
@@ -105,7 +105,7 @@
 
 .formbtn:active {
   background: #fff;
-  color: #6d1702;
+  color: var(--primary-color);
 }
 
 .formbtn {
