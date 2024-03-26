@@ -78,6 +78,9 @@ function NavBar() {
                 <Link to="home">Home</Link>
               </li>
               <li>
+                <Link to="coolMax-us">Home2</Link>
+              </li>
+              <li>
                 <Link to="products">Products</Link>
               </li>
               {/* <li

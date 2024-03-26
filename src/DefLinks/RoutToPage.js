@@ -6,6 +6,7 @@ import ServicesMain from "../Components/Services/ServicesMainComp/ServicesMain";
 import ProductsMain from "../Components/Products/ProductsMain/ProductsMain";
 import ContactUsMain from "../Components/Contactus/ContactUsMain/ContactusMain";
 import ProductDetails from "../Components/Products/ProductDetails/ProductDetails";
+import HomeMain from "../Components/CoolMaxHome/HomeMain/HomeMain";
 
 function HomePageRoutes() {
   return (
@@ -15,6 +16,7 @@ function HomePageRoutes() {
       <Route path="/services" element={<ServicesMain />} />
       <Route path="/products" element={<ProductsMain />} />
       <Route path="/contact-us" element={<ContactUsMain />} />
+      <Route path="/coolMax-us" element={<HomeMain />} />
       <Route path="/home/products/:productType" element={<ProductDetails />} />  
     </Routes>
   );

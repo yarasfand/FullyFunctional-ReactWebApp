@@ -1,0 +1,112 @@
+.HomeMainInfoHeading {
+  text-align: center;
+  font-size: medium;
+  color: gray;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.HomeMainInfoSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.HomeMainInfoData {
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.HomeMainInfo {
+  width: 350px;
+  margin: 1.5rem;
+}
+
+.HomeMainInfoDescription {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.HomeMainInfo {
+  margin-top: 1.5rem;
+}
+
+.HomeMainInfoHeading {
+  letter-spacing: -0.7px;
+  background: linear-gradient(180deg, #aa47b0 27%, #f85897 73%);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homeMainInfoButtonDiv {
+  display: flex;
+  align-items: center;
+}
+.homeMainInfoButton,
+.homeMainInfoButtonNoAnimate {
+  background-color: transparent;
+  background-image: linear-gradient(130deg, #a92daf 0%, #f7277a 100%);
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5%;
+  margin: auto;
+  position: relative;
+}
+
+.homeMainInfoButton:hover {
+  background-image: linear-gradient(130deg, #f7277a 0%, #a92daf 100%);
+  text-decoration: none;
+  color: #fff;
+}
+
+@keyframes slideEffect {
+    0% {
+      right: -90%;
+      opacity: 0; /* Start from outside the parent div with low opacity */
+    }
+  
+    100% {
+      right: 0%;
+      opacity: 1; /* Stop in the center with full opacity */
+    }
+  }
+
+.homeMainInfoButton {
+  -webkit-animation: slideEffect 1.5s linear;
+  /* Apply animation */
+  animation: slideEffect 1.5s linear;
+  /* Apply animation */
+}
+
+@media (max-width: 1000px) {
+  .HomeMainInfo {
+    width: 300px;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 738px) {
+  .HomeMainInfoData2{
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 500px) {
+  .HomeMainInfo {
+    width: 200px;
+    margin: 1rem;
+  }
+
+  .HomeMainInfoDescription {
+    color: gray;
+    font-size: 10px;
+  }
+}

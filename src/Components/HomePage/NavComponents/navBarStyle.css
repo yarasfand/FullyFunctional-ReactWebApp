@@ -139,7 +139,7 @@
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .navContainer {
     margin-top: 0;
     display: flex;
@@ -156,7 +156,7 @@
   }
 
   .navLogo img {
-    width: 50%;
+    width: 10rem;
   }
 
   .navItems {

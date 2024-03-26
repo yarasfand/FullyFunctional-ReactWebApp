@@ -1,0 +1,116 @@
+.homeMainMidSection {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80vw;
+}
+
+.homeMainMidData {
+  margin-top: 1rem;
+  width: 25vw;
+  height: 220px;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.homeMainMidDataHeadingDiv{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(170, 71, 176, 0.7) 27%,
+    rgba(248, 88, 151, 0.7) 73%
+  ),
+  rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeMainMidDataHeadingDiv h2{
+  margin: auto;
+}
+
+.homeMainMidData:hover {
+  transform: translateY(-10px);
+  transition: ease .3s;
+}
+
+.homeMainMidData1 {
+  background-image: url(./homeMainMidAssets/img1.jpg);
+}
+
+.homeMainMidData2 {
+  background-image: url(./homeMainMidAssets/img2.jpg);
+}
+
+.homeMainMidData3 {
+  background-image: url(./homeMainMidAssets/img3.jpg);
+}
+
+.homeMainMidDataHeading {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.homeMainMidMainHeading{
+    margin-top: 0.7rem;
+    color: gray;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.homeMainMidDataCaption {
+  text-align: center;
+  font-size: 12px;
+  width: 25vw;
+  color: gray;
+}
+
+@media screen and (max-width: 900px) {
+  .homeMainMidData{
+    height: 180px;
+  }
+  .homeMainMidDataHeading {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homeMainMidSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeMainMidData {
+    margin: 1rem;
+    width: 45vw;
+  }
+
+  .homeMainMidDataCaption {
+    width: 45vw;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+    .homeMainMidSection {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .homeMainMidData {
+      margin: 1rem;
+      width: 75vw;
+      height: 200px;
+    }
+  
+    .homeMainMidDataCaption {
+      width: 75vw;
+    }
+  }

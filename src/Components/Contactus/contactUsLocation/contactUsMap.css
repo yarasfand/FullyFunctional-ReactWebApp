@@ -1,7 +1,7 @@
 .ContactUsLocationHeading{
     text-align: center;
     font-family: sans-serif;
-    color: #e26142;
+    color: var(--primary-color);;
 }
 
 .ContactUsLocationMap{
